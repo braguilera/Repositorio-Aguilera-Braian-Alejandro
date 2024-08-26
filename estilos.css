@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color:fbfefb ;
+    color: 39393a;
+}
+
+.inicio{
+    text-align: center;
+}
+
+.inicio p{
+    font-size: 26px;
+    margin: 0;
+}
+
+.inicio b{
+    color: #e899dc;
+}
+
+.inicio h3{
+    background-color: #ccc;
+    text-shadow: 1px 1px 7.5px rgba(255,255,255,0.9);
+    font-size: 132px;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
