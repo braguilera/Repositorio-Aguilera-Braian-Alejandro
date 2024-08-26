@@ -29,10 +29,5 @@ body {
 }
 
 .inicio_triangulo_img{
-    width: 0px;
-    height: 0px;
-    border-bottom: 100px solid #e899dc;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-radius: 10px;
+
 }
