@@ -68,11 +68,15 @@ ul li{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.inicio__contactos{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 
 .inicio__braian{
-    position: absolute;
     height: auto;
-    bottom: 0;
     right: 100px;
 }
 
