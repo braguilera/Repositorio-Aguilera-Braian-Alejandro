@@ -3,6 +3,8 @@ body {
     box-sizing: border-box;
     background-color:#fbfefb ;
     color: 39393a;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 header{
@@ -25,6 +27,7 @@ ul li{
 
 .inicio{
     text-align: center;
+    height: 3000px;
 }
 
 .inicio p{
@@ -84,4 +87,52 @@ ul li{
 
 .inicio__triangulo__chico{
     width: 10%;
+}
+
+.triangulo__moviendo{
+    position: absolute;
+    width:  600px;
+    z-index: -10;
+    top: 30%;
+    left: 10%;
+    filter: blur(70px);
+    animation: rotar 60s both infinite, mover 60s linear infinite;
+    opacity: .4;
+}
+
+@keyframes rotar{
+    0%{
+        transform: scale(1) rotateZ(0);
+    }
+
+    50%{
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100%{
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+@keyframes mover {
+    0% {
+        top: 30%;
+        left: 20%;
+    }
+    25% {
+        top: 15%;
+        left: 80%;
+    }
+    50% {
+        top: 70%;
+        left: 60%;
+    }
+    75% {
+        top: 50%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 20%;
+    }
 }
