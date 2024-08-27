@@ -32,7 +32,7 @@ ul li{
 .inicio{
     text-align: center;
     width: 100vw;
-    height: 90vh;
+    height: 70vh;
 }
 
 .inicio p{
@@ -69,6 +69,14 @@ ul li{
 
 .inicio__triangulo__chico{
     width: 10%;
+}
+
+/* Proyectos */
+
+.proyectos{
+    width: 100vw;
+    height: 100vh;
+    background: #ccc;
 }
 
 /* Animaciones y decoracion */
