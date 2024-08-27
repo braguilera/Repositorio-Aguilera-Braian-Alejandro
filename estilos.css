@@ -124,8 +124,14 @@ ul li{
     position: absolute;
     background-color: #f5f4f4;
     bottom: 0;
-    border-radius: calc(40 * 1px) 0 0 0;
+}
 
+.proyectos__curva{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
 }
 
 /* Animaciones y decoracion */
