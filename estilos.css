@@ -86,13 +86,34 @@ ul li{
     margin: 0 auto;
     width: 90%;
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    gap: 50px;
 }
 
 .proyectos__titulo{
+
     padding: 20px;
     text-align: center;
     font-size: 6rem;
     margin: 0;
+}
+
+.proyectos__card{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f5f4f4;
+    position: relative;
+    padding: 10px 50px 100px 50px;
+}
+
+.proyectos__lucas{
+    position: absolute;
+    width: 600px;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Animaciones y decoracion */
