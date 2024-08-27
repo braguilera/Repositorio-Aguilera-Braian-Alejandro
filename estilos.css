@@ -33,11 +33,13 @@ ul li{
     text-align: center;
     width: 100vw;
     height: 70vh;
+    position: relative;
 }
 
 .inicio p{
     font-size: 26px;
     margin: 0;
+    padding-top: 100px;
 }
 
 .inicio b{
@@ -45,6 +47,7 @@ ul li{
 }
 
 .inicio h3{
+    padding-top: 50px;
     background-color: #ccc;
     text-shadow: 1px 1px 7.5px rgba(255,255,255,0.9);
     font-size: 132px;
@@ -56,19 +59,18 @@ ul li{
 
 
 .inicio__braian{
+    position: absolute;
     height: auto;
-
-    transform: translate(-50%, -10%);
-    mask-image: linear-gradient(
-        #e899dc 80%,
-        transparent
-    );
-    border-radius: 16px;
+    bottom: 0;
+    right: 100px;
 }
 
 
 .inicio__triangulo__chico{
-    width: 10%;
+    width: 5%;
+    position: absolute;
+    bottom: 20px;
+    animation: atencion 18s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 /* Proyectos */
@@ -77,6 +79,20 @@ ul li{
     width: 100vw;
     height: 100vh;
     background: #ccc;
+}
+
+.proyectos__container{
+    background-color: #e899dc;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+
+.proyectos__titulo{
+    padding: 20px;
+    text-align: center;
+    font-size: 6rem;
+    margin: 0;
 }
 
 /* Animaciones y decoracion */
@@ -100,9 +116,39 @@ ul li{
     filter: blur(70px);
     animation: rotar 60s both infinite, mover 60s linear infinite;
     opacity: .4;
+
 }
 
 /* Animaciones */
+
+@keyframes atencion{
+    0%,
+    100% {
+
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+
+        transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+    
+        transform: translateY(8px);
+    }
+    80% {
+    
+        transform: translateY(6.4px);
+    }
+    90% {
+    
+        transform: translateY(-6.4px);
+    }
+}
 
 @keyframes rotar{
     0%{
