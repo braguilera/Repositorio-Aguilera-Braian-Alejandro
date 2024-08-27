@@ -12,7 +12,7 @@ body {
 
 header{
     width: 100vw;
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     position: sticky;
@@ -71,7 +71,7 @@ ul li{
 .inicio__contactos{
     position: absolute;
     bottom: -30px;
-    right: 0px;
+    right: 350px;
     height: 400px;
     width: 500px;
 }
@@ -85,11 +85,15 @@ ul li{
 .inicio__contacto__container{
     display: flex;
     flex-direction: column;
-    width: 40px;
+    width: 30px;
     position: absolute;
     top: 0;
     right: 50px;
     gap: 15px;
+}
+
+.inicio__contacto__container{
+    cursor: pointer;
 }
 
 .inicio__contacto__linea{
@@ -113,6 +117,7 @@ ul li{
     height: 100vh;
     background: #ccc;
     margin: 0 auto;
+    border-radius: 32px;
 }
 
 .proyectos__container{
