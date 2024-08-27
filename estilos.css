@@ -7,6 +7,8 @@ body {
     overflow-x: hidden;
 }
 
+/* Navegacion */
+
 header{
     width: 100vw;
     height: 100px;
@@ -25,9 +27,12 @@ ul li{
     font-size: 24px;
 }
 
+/* Inicio */
+
 .inicio{
     text-align: center;
-    height: 3000px;
+    width: 100vw;
+    height: 90vh;
 }
 
 .inicio p{
@@ -49,24 +54,10 @@ ul li{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.inicio_triangulo_img{
-    width: 40vw;
-    margin: 0 auto;
-    position: relative;
-}
-
-.inicio__triangulo{
-    width: 100%;
-    margin: 0;
-    filter: drop-shadow(10px 10px 20px #232323a6);
-}
 
 .inicio__braian{
-    width: 50%;
     height: auto;
-    position: absolute;
-    top: 10%;
-    left: 50%;
+
     transform: translate(-50%, -10%);
     mask-image: linear-gradient(
         #e899dc 80%,
@@ -75,18 +66,21 @@ ul li{
     border-radius: 16px;
 }
 
-.inicio__segundo__triangulo{
-    width: 60%;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    z-index: -1;
-    filter: drop-shadow(10px 10px 20px #232323a6);
-}
 
 .inicio__triangulo__chico{
     width: 10%;
+}
+
+/* Animaciones y decoracion */
+
+.ola__blur{
+    position: absolute;
+    width: 80%;
+    top: 0;
+    right: 0;
+    rotate: 180deg;
+    z-index: -1;
+    opacity: .3;
 }
 
 .triangulo__moviendo{
@@ -99,6 +93,8 @@ ul li{
     animation: rotar 60s both infinite, mover 60s linear infinite;
     opacity: .4;
 }
+
+/* Animaciones */
 
 @keyframes rotar{
     0%{
