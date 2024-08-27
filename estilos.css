@@ -70,16 +70,34 @@ ul li{
 
 .inicio__contactos{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -30px;
+    right: 0px;
+    height: 400px;
+    width: 500px;
 }
 
 
 .inicio__braian{
-    height: auto;
-    right: 100px;
+    height: 100%;
+    filter: drop-shadow(0 20px 15px #23232380);
 }
 
+.inicio__contacto__container{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    gap: 15px;
+}
+
+.inicio__contacto__linea{
+    width: 2px;
+    height: 100px;
+    background-color: #232323;
+    align-self: center;
+}
 
 .inicio__triangulo__chico{
     width: 5%;
