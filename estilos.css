@@ -12,7 +12,15 @@ body {
 
 header{
     width: 100vw;
-    height: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    animation: enganchar_nav linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
 }
 
 ul{
@@ -23,9 +31,11 @@ ul{
     justify-content: space-around;
     list-style: none;
 }
+
 ul li{
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Inicio */
@@ -33,7 +43,7 @@ ul li{
 .inicio{
     text-align: center;
     width: 100vw;
-    height: 70vh;
+    height: 75vh;
     position: relative;
 }
 
@@ -89,7 +99,7 @@ ul li{
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 400px;
+    grid-auto-rows: 380px;
     gap: 50px;
 
 }
@@ -103,7 +113,7 @@ ul li{
 
 .proyectos__card{
     position: relative;
-    width: 80%;
+    width: 800px;
     margin: 0 auto;
     height: auto;
     background-color: rgb(189, 189, 189);
@@ -122,10 +132,10 @@ ul li{
     width: 100%;
     margin: 0 auto;
     border-radius: 12px;
-    
 }
 
 .proyectos__contenido{
+    height: 200px;
     position: absolute;
     background-color: #f5f4f4;
     bottom: 0;
@@ -173,6 +183,15 @@ ul li{
 }
 
 /* Animaciones */
+
+@keyframes enganchar_nav{
+    to{
+        background: #e899dc71;
+        backdrop-filter: blur(5px);
+        scale: 1.1;
+        
+    }
+}
 
 @keyframes mostrar{
 
