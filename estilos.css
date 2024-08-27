@@ -5,6 +5,7 @@ body {
     color: 39393a;
     width: 100vw;
     overflow-x: hidden;
+    color: #232323;
 }
 
 /* Navegacion */
@@ -76,21 +77,20 @@ ul li{
 /* Proyectos */
 
 .proyectos{
-    width: 100vw;
+    max-width: 1200px;
     height: 100vh;
     background: #ccc;
+    margin: 0 auto;
 }
 
 .proyectos__container{
-    background-color: #e899dc;
     margin: 0 auto;
     width: 90%;
-    height: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 400px;
     gap: 50px;
-
 
 }
 
@@ -103,14 +103,19 @@ ul li{
 
 .proyectos__card{
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     height: auto;
-    background-color: aqua;
+    background-color: rgb(189, 189, 189);
     box-shadow: 0 20px 24px #2323237a;
     border-radius: 16px;
     backdrop-filter: blur(16px);
     overflow-y: hidden;
+}
+
+.card__fecha{
+    margin: 0;
+    color: #808080;
 }
 
 .proyectos__lucas{
@@ -128,6 +133,7 @@ ul li{
     padding: 0 30px 60px 30px;
     transform: translateY(100px);
     transition-duration: .3s;
+    opacity: .8;
 }
 
 .proyectos__contenido:hover{
