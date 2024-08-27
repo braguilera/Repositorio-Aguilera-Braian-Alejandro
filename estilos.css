@@ -125,12 +125,13 @@ ul li{
     background-color: #f5f4f4;
     bottom: 0;
     border-top-left-radius: 60px;
-    padding: 0 30px 0 30px;
-    transform: translateY(100px)
+    padding: 0 30px 60px 30px;
+    transform: translateY(100px);
+    transition-duration: .3s;
 }
 
 .proyectos__contenido:hover{
-    animation: mostrar 1s ease-in forwards;
+    transform: translateY(0);
 }
 
 .proyectos__curva{
