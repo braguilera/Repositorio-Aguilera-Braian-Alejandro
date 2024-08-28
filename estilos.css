@@ -245,7 +245,7 @@ ul li{
     left: 10%;
     filter: blur(70px);
     animation: rotar 60s both infinite, mover 60s linear infinite;
-    opacity: .4;
+    opacity: .2;
 
 }
 
