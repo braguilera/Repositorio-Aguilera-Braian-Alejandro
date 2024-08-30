@@ -202,10 +202,10 @@ ul li{
     display: flex;
     margin-top: 50px;
     flex-direction: column;
-
+    gap: 5rem;
 }
 
-.titulo__frontend{
+.titulo__conocimiento{
     font-size: 2.5rem;
     padding: 10px;
     background-color: #fbfefb;
