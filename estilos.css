@@ -54,12 +54,12 @@ ul li{
 }
 
 .inicio strong{
-    color: #7803FB;
+    color: #9050dd;
 }
 
 .inicio h3{
     padding-top: 50px;
-    background-color: #ccc;
+    background-color: #969696;
     text-shadow: 1px 1px 7.5px rgba(255,255,255,0.9);
     font-size: 132px;
     background-clip: text;
@@ -68,14 +68,13 @@ ul li{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
-
 .inicio__braian{
     position: absolute;
     right: 10%;
     bottom: -40px;
     height: 400px;
     filter: drop-shadow(0 20px 15px #23232380);
+    z-index: 1;
 }
 
 .inicio__contacto__container{
@@ -91,12 +90,18 @@ ul li{
 
 .inicio__contacto__container img{
     cursor: pointer;
+    z-index: 2;
 }
+
+.inicio__contacto__container img:hover{
+    scale: 2;
+}
+
 
 .inicio__contacto__linea{
     width: 2px;
     height: 100px;
-    background-color: #232323;
+    background-color: #9050dd;
     align-self: center;
 }
 
@@ -112,9 +117,17 @@ ul li{
 .proyectos{
     max-width: 1200px;
     height: 100vh;
-    background: #ccc;
+    border: 1px solid #7803FB;
     margin: 0 auto;
-    border-radius: 32px;
+    background: rgba(144, 80, 221, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(144, 80, 221, 0.021);
+}
+
+.proyectos h1{
+    color: #9050dd;
 }
 
 .proyectos__container{
@@ -231,7 +244,7 @@ ul li{
     right: 0;
     rotate: 180deg;
     z-index: -1;
-    opacity: .3;
+    opacity: .2;
 }
 
 .triangulo__moviendo{
