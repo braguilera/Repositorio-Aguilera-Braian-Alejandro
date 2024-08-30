@@ -53,8 +53,8 @@ ul li{
     padding-top: 100px;
 }
 
-.inicio b{
-    color: #e899dc;
+.inicio strong{
+    color: #7803FB;
 }
 
 .inicio h3{
@@ -68,17 +68,13 @@ ul li{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.inicio__contactos{
-    position: absolute;
-    bottom: -30px;
-    right: 350px;
-    height: 400px;
-    width: 500px;
-}
 
 
 .inicio__braian{
-    height: 100%;
+    position: absolute;
+    right: 10%;
+    bottom: -40px;
+    height: 400px;
     filter: drop-shadow(0 20px 15px #23232380);
 }
 
@@ -87,12 +83,13 @@ ul li{
     flex-direction: column;
     width: 30px;
     position: absolute;
-    top: 0;
-    right: 50px;
+    bottom: 35%;
+    right: 10%;
     gap: 15px;
+
 }
 
-.inicio__contacto__container{
+.inicio__contacto__container img{
     cursor: pointer;
 }
 
