@@ -205,22 +205,9 @@ ul li{
     gap: 5rem;
 }
 
-.titulo__conocimiento{
-    font-size: 2.5rem;
-    padding: 10px;
-    background-color: #fbfefb;
-    position: absolute;
-    top: -60px;
-    left: -10px;
 
-    background: rgba(245, 244, 244, 0.058823529411764705);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.1px);
-    -webkit-backdrop-filter: blur(12.1px);
-}
 
-.conocimientos__frontend{
+.conocimientos__grid{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
