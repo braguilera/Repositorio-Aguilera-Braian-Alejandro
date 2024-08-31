@@ -302,8 +302,15 @@ ul li{
 }
 
 /* Especificaciones para cada elemento individual */
-.sobremi__foto {
+.sobremi__grid .sobremi__foto {
     grid-row: span 2 / span 2;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.sobremi__foto img{
+    
+    width:  100%;
 }
 
 .sobremi__softskill {
