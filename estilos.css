@@ -350,6 +350,23 @@ ul li{
 }
         
 
+/* Contacto */
+
+footer{
+    width: 100%;
+    height: 600px;
+    background-color: #7803FB;
+}
+
+.contacto{
+    display: flex;
+    gap: 100px;
+}
+
+.contacto__info{
+    font-size: 32px;
+}
+
 /* Animaciones y decoracion */
 
 .ola__blur{
