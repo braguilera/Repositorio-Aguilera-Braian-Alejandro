@@ -365,6 +365,12 @@ footer{
 
 .contacto__info{
     font-size: 32px;
+    width: 50%;
+    margin: 20px;
+}
+.conocimientos__form{
+    width: 50%;
+    margin: 20px;
 }
 
 /* Animaciones y decoracion */
