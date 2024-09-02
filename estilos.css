@@ -124,21 +124,21 @@ ul li{
 
 .proyectos{
     max-width: 1200px;
-    height: 100vh;
-    border: 1px solid #7803FB;
+    height: 1000px;
     margin: 0 auto;
-    background: rgba(144, 80, 221, 0.1);
+    background: #f5f4f4;
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.8px);
-    border: 1px solid rgba(144, 80, 221, 0.021);
+
+}
+
+.proyectos__titulo{
+    position: absolute;
 }
 
 
 .proyectos__container{
     margin: 0 auto;
     width: 90%;
-    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 380px;
@@ -150,12 +150,13 @@ ul li{
     position: relative;
     width: 800px;
     margin: 0 auto;
-    height: auto;
+    height: 400px;
     background-color: rgb(189, 189, 189);
     box-shadow: 0 20px 24px #2323237a;
     border-radius: 16px;
     backdrop-filter: blur(16px);
-    overflow-y: hidden;
+    overflow: hidden;
+    margin-top: 100px;
 }
 
 .card__fecha{
@@ -164,9 +165,9 @@ ul li{
 }
 
 .proyectos__lucas{
-    width: 100%;
     margin: 0 auto;
     border-radius: 12px;
+    height: 100%;
 }
 
 .proyectos__contenido{
@@ -416,7 +417,7 @@ footer{
 
 @keyframes enganchar_nav{
     to{
-        background: #e899dc71;
+        background:  #EDF0F7;
         backdrop-filter: blur(5px);
         scale: 1.1;
         
