@@ -413,10 +413,15 @@ footer{
     box-shadow: 0 0 40px #23232373;
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     right: 50px;
+    bottom: 50px;
     display: flex;
     border-radius: 100vmax;
+    animation: ocultar linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+
 }
 
 .triangulo__arriba{
@@ -427,6 +432,16 @@ footer{
 }
 
 /* Animaciones */
+
+@keyframes ocultar{
+    from{
+        transform: translateY(100px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
 
 @keyframes enganchar_nav{
     to{
