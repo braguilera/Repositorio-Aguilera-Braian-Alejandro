@@ -142,8 +142,32 @@ ul li{
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 380px;
-    gap: 50px;
+    gap: 100px;
 
+}
+
+.proyectos__titulos{
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 10px;
+    top: -30px; 
+    gap: 10px;
+    padding: 0 10px;
+    background-color: #f5f4f4;
+    border-radius: 32px;
+    z-index: 20;
+}
+
+.proyectos__titulos::before{
+    content: "";
+    background: rebeccapurple;
+    position: absolute;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 0 0 32px;
 }
 
 .proyectos__card{
@@ -155,7 +179,7 @@ ul li{
     box-shadow: 0 20px 24px #2323237a;
     border-radius: 16px;
     backdrop-filter: blur(16px);
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .card__fecha{
