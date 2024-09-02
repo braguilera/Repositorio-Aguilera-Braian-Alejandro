@@ -1,7 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    background-color:#fbfefb ;
+    background-color:#EDF0F7 ;
     color: 39393a;
     width: 100vw;
     overflow-x: hidden;
@@ -67,8 +67,8 @@ ul li{
 
 .inicio h3{
     padding-top: 50px;
-    background-color: #969696;
-    text-shadow: 1px 1px 7.5px rgba(255,255,255,0.9);
+    background-color: #b9b9b9c0;
+    text-shadow: 1px 1px 7.5px rgba(241, 241, 241, 0.9);
     font-size: 132px;
     background-clip: text;
     color: transparent;
@@ -142,32 +142,8 @@ ul li{
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 380px;
-    gap: 100px;
+    gap: 50px;
 
-}
-
-.proyectos__titulos{
-    align-items: center;
-    display: flex;
-    position: absolute;
-    left: 10px;
-    top: -30px; 
-    gap: 10px;
-    padding: 0 10px;
-    background-color: #f5f4f4;
-    border-radius: 32px;
-    z-index: 20;
-}
-
-.proyectos__titulos::before{
-    content: "";
-    background: rebeccapurple;
-    position: absolute;
-    right: -20px;
-    width: 20px;
-    height: 20px;
-    top: 0;
-    border-radius: 0 0 32px;
 }
 
 .proyectos__card{
@@ -179,7 +155,7 @@ ul li{
     box-shadow: 0 20px 24px #2323237a;
     border-radius: 16px;
     backdrop-filter: blur(16px);
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .card__fecha{
@@ -275,6 +251,7 @@ ul li{
 
 .sobremi {
     max-width: 1000px;
+    height: 900px;
     margin: 0 auto;
 }
 
@@ -282,7 +259,7 @@ ul li{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 100px);
-    gap: 8px;
+    gap: 20px;
 }
 
 /* Fondo gris con glassmorphism para los contenedores principales */
@@ -341,6 +318,20 @@ ul li{
     grid-row: span 3 / span 3;
     grid-column-start: 1;
     grid-row-start: 3;
+}
+
+
+.sobremi__softskill ul{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    list-style: circle;
+}
+
+.sobremi__softskill li{
+    font-weight: normal;
+    cursor: default;
 }
 
 .sobremi__parrafo {
