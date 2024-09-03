@@ -18,7 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">+
+
+
+    <!-- JavaSCript -->
+    <script src="./mensaje_mail.js"></script>
+
 </head>
 
 
@@ -246,9 +251,33 @@
         <div class="contacto">
             <div class="contacto__info">
                 <p>Interesado en colaborar o simplemente quieres saludar? ¡No dudes en contactarme!</p>
+
+
+
+                </div>
+
+
             </div>
+
+
             <div class="contacto__form">
                 <p>Aqui iria un form</p>
+
+                <button type="button" class="btn btn-primary" id="liveToastBtn">Enviar mail</button>
+
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <img src="..." class="rounded me-2" alt="...">
+                            <strong class="me-auto">Bootstrap</strong>
+                            <small>11 mins ago</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            <p>Mail enviado</p>
+                        </div>
+                    </div>
+
             </div>
         </div>
     </footer>

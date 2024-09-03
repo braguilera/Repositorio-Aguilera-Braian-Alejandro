@@ -288,10 +288,11 @@ ul li{
     width: 60px;
 }
 
-.div__html{
-    background-color: #f06529;
-    width: 50px;
-    height: 50px;
+.conocimientos__skill::before{
+    content: '';
+background-color: #232323   ;
+    width: 80px;
+    height: 80px;
     position: absolute;
     z-index: -2;
     filter: blur(10px);
