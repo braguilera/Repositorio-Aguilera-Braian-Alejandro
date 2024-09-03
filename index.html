@@ -36,11 +36,11 @@
     <header>
 
         <ul>
-            <li>Inicio</li>
-            <li>Proyectos</li>
-            <li>Conocimientos</li>
-            <li>Sobre mí</li>
-            <li>Contacto</li>
+            <li><a href="#nav__inicio">Inicio</a></li>
+            <li><a href="#nav__proyecto">Proyectos</a></li>
+            <li><a href="#nav__conocimientos">Conocimientos</a></li>
+            <li><a href="#nav__sobremi">Sobre mí</a></li>
+            <li><a href="#nav__contacto">Contacto</a></li>
         </ul>
     
     </header>
@@ -49,11 +49,15 @@
     <main>
         <img src="./img/olas.svg" alt="" class="ola__blur">
 
-        <div class="ir__arriba">
-            <img src="./img/triangulo-small.svg" alt="triangulo apuntalo abajo" class="triangulo__arriba">
-        </div>
 
-        <section class="inicio">
+        <a href="#">
+            <button class="ir__arriba">
+                <img src="./img/triangulo-small.svg" alt="triangulo apuntalo abajo" class="triangulo__arriba">
+            </button>
+        </a>
+
+
+        <section class="inicio" id="nav__inicio">
             <p>Soy <strong>Braian Alejandro Aguilera</strong>, un fullstack enfocado en el desarrollo</p>
             <h3>FRONTEND</h3>
             
@@ -69,7 +73,7 @@
 
         </section>
 
-        <section class="proyectos">
+        <section class="proyectos" id="nav__proyecto">
 
             <div class="title-container">
                 <div class="titulo__circle"></div>
@@ -101,7 +105,10 @@
 
         </section>
 
-        <section class="conocimientos">
+        <section class="conocimientos" id="nav__conocimientos">
+
+            <img src="./img/triangulo.svg" alt="Triangulo en movmiento de fondo con desenfoque" class="triangulo__moviendo">
+
             <div class="conocimientos__container">
 
                 <div class="title-container">
@@ -185,7 +192,7 @@
             </div>
         </section>
 
-        <section id="sobremi" class="sobremi">
+        <section class="sobremi" id="nav__sobremi">
 
             <div class="title-container">
                 <div class="titulo__circle"></div>
@@ -246,38 +253,36 @@
 
     </main>
 
-    <footer>
-        <h1>Contacto</h1>
+    <footer id="nav__contacto">
+
+        
+
         <div class="contacto">
-            <div class="contacto__info">
-                <p>Interesado en colaborar o simplemente quieres saludar? ¡No dudes en contactarme!</p>
+            <h1>Contacto</h1>
+            <div class="contacto__container">
+                <div class="contacto__info">
+                    <p>Interesado en colaborar o simplemente quieres saludar? ¡No dudes en contactarme!</p>
+                    
+                </div>
+                <div class="contacto__form">
+                    <p>Aqui iria un form</p>
 
+                    <button type="button" class="btn btn-primary" id="liveToastBtn">Enviar mail</button>
 
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <img src="..." class="rounded me-2" alt="...">
+                                <strong class="me-auto">Bootstrap</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                <p>Mail enviado</p>
+                            </div>
+                        </div>
 
                 </div>
-
-
-            </div>
-
-
-            <div class="contacto__form">
-                <p>Aqui iria un form</p>
-
-                <button type="button" class="btn btn-primary" id="liveToastBtn">Enviar mail</button>
-
-                <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-header">
-                            <img src="..." class="rounded me-2" alt="...">
-                            <strong class="me-auto">Bootstrap</strong>
-                            <small>11 mins ago</small>
-                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                        </div>
-                        <div class="toast-body">
-                            <p>Mail enviado</p>
-                        </div>
-                    </div>
-
             </div>
         </div>
     </footer>

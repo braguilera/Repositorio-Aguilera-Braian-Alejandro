@@ -10,6 +10,8 @@ body {
 
 :root{
     --bg_text_color: linear-gradient(to right, #ae89db, #9050dde0);
+    --bg_section_color: linear-gradient(#f5f4f4, #f1f1f1);
+
 }
 
 html{
@@ -148,7 +150,7 @@ ul li{
     bottom: 35%;
     right: 10%;
     gap: 15px;
-
+    transition-duration: .3s;
 }
 
 .inicio__contacto__container img{
@@ -157,6 +159,7 @@ ul li{
 }
 
 .inicio__contacto__container img:hover{
+    transition-duration: .3s;
     scale: 2;
 }
 
@@ -176,13 +179,20 @@ ul li{
     max-width: 1200px;
     height: 1000px;
     margin: 0 auto;
-    background: white;
+    background: var(--bg_section_color);
     border-radius: 16px;
     position: relative;
     z-index: 0;
 }
 
+.proyectos .titulo__fill, .proyectos .titulo__border{
+    left: 0;
+}
 
+
+.proyectos .titulo__circle{
+    left: 15%;
+}
 
 .proyectos__container{
     margin: 0 auto;
@@ -244,6 +254,10 @@ ul li{
 
 /* Conocimientos */
 
+.conocimientos{
+    position: relative;
+}
+
 .conocimientos__container{
     max-width: 1200px;
     padding: 50px;
@@ -288,47 +302,47 @@ ul li{
     width: 60px;
 }
 
-.conocimientos__skill::before{
-    content: '';
-background-color: #232323   ;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    z-index: -2;
-    filter: blur(10px);
-    opacity: .5;
+.conocimientos .titulo__fill, .conocimientos .titulo__border{
+    left: 0%;
+}
+
+
+.conocimientos .titulo__circle{
+    left: 20%;
 }
 
 /* Sobre mi */
 
 .sobremi {
-    max-width: 1000px;
-    height: 900px;
+    max-width: 1200px;
+    height: 1000px;
     margin: 0 auto;
 }
 
 .sobremi__grid {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 100px);
-    gap: 20px;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 150px;
 }
 
-/* Fondo gris con glassmorphism para los contenedores principales */
-.sobremi__grid > div {
-    position: relative;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 10px;
+.sobremi .titulo__fill, .sobremi .titulo__border{
+    left: 0;
 }
 
-/* Fondo blanco y círculo animado para el contenido interno */
+
+.sobremi .titulo__circle{
+    left: 25%;
+}
+
+
 .inner-card {
     position: relative;
-    background-color: white;
-    border-radius: 20px;
+    background: var(--bg_section_color);
+    border-radius: 12px;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -336,7 +350,6 @@ background-color: #232323   ;
 }
 
 
-/* Especificaciones para cada elemento individual */
 .sobremi__grid .sobremi__foto {
     grid-row: span 2 / span 2;
     width: 200px;
@@ -408,8 +421,20 @@ footer{
 }
 
 .contacto{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__container{
     display: flex;
     gap: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .contacto__info{
@@ -444,6 +469,15 @@ footer{
     animation: rotar 60s both infinite, mover 60s linear infinite;
     opacity: .2;
 
+}
+
+.conocimientos .triangulo__moviendo{
+
+    top: 60%;
+    left: 80%;
+    filter: blur(70px);
+    animation: rotar 60s reverse infinite, mover 60s linear infinite;
+    opacity: .2;
 }
 
 .ir__arriba{
