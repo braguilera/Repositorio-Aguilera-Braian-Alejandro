@@ -8,19 +8,27 @@ body {
     color: #232323;
 }
 
+:root{
+    --bg_text_color: linear-gradient(to right, #ae89db, #9050dde0);
+}
+
+
 h1{
-    color: #9050dd;
     padding: 20px;
     text-align: center;
     font-size: 6rem;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background: var(--bg_text_color);
+    background-clip: text;
+    color: transparent;
 }
 
 p{
     font-family: 'Lato', sans-serif;
     font-weight:500;
 }
+
 
 /* Navegacion */
 
@@ -74,15 +82,14 @@ ul li{
 }
 
 .inicio h3{
-    padding-top: 50px;
     background-color: #b9b9b9c0;
     text-shadow: 1px 1px 7.5px rgba(241, 241, 241, 0.9);
-    font-size: 132px;
+    font-size: 160px;
     background-clip: text;
     color: transparent;
     margin: 0;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 10px;
     background-image: linear-gradient(45deg, #233D56, #F2D6AD); /* Degradado sutil */
 }
 
@@ -136,37 +143,6 @@ ul li{
     position: relative;
 }
 
-.proyectos__titulo{
-    position: absolute;
-    top: 0px;
-    left: 30px;
-    background: #EDF0F7;
-    border-radius: 0 0 32px 32px;
-}
-
-.proyectos__titulo::before{
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    position: absolute;
-    right: -20px;
-    top: 0;
-    border-radius: 32px 0 0;
-    box-shadow: -8px -8px 0px 8px #EDF0F7;
-}
-
-.proyectos__titulo::after{
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    position: absolute;
-    left: -20px;
-    top: 0;
-    border-radius: 0 32px 0 0;
-    box-shadow: 8px -8px 0px 8px #EDF0F7;
-}
 
 
 .proyectos__container{
