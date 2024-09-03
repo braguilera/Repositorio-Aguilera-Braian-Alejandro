@@ -13,21 +13,21 @@ body {
 }
 
 
-h1{
-    padding: 20px;
-    text-align: center;
-    font-size: 6rem;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: var(--bg_text_color);
-    background-clip: text;
-    color: transparent;
-}
-
 p{
     font-family: 'Lato', sans-serif;
     font-weight:500;
 }
+
+
+
+h1 {
+    position: relative;
+    font-size: 5rem;
+    display: inline-block;
+    margin: 50px;
+    line-height: 1.2;
+}
+
 
 
 /* Navegacion */
@@ -81,6 +81,7 @@ ul li{
     color: #9050dd;
 }
 
+
 .inicio h3{
     background-color: #b9b9b9c0;
     text-shadow: 1px 1px 7.5px rgba(241, 241, 241, 0.9);
@@ -88,8 +89,8 @@ ul li{
     background-clip: text;
     color: transparent;
     margin: 0;
-    font-family: "Barlow Condensed", sans-serif;
-    letter-spacing: 10px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 4px;
     background-image: linear-gradient(45deg, #233D56, #F2D6AD); /* Degradado sutil */
 }
 
@@ -141,6 +142,7 @@ ul li{
     background: white;
     border-radius: 16px;
     position: relative;
+    z-index: 0;
 }
 
 
@@ -295,25 +297,6 @@ ul li{
     padding: 10px;
 }
 
-.circle {
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 50px;
-    height: 50px;
-    background-color: #9050dd; /* Cambia el color según prefieras */
-    border-radius: 50%;
-    transition: all 0.5s ease-in-out;
-}
-
-.inner-card:hover .circle {
-    width: 500px;
-    height: 500px;
-    top: -150px;
-    left: -150px;
-    background-color: #9050dd; /* Cambia el color si prefieres */
-    transform: rotate(45deg);
-}
 
 /* Especificaciones para cada elemento individual */
 .sobremi__grid .sobremi__foto {

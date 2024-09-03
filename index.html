@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./estilos.css">
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -12,9 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c5a69afab5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 
 
@@ -61,7 +65,13 @@
         </section>
 
         <section class="proyectos">
-            <h1 class="proyectos__titulo">Proyectos</h1>
+
+            <div class="title-container">
+                <div class="titulo__circle"></div>
+                <h1 class="titulo__fill">Proyectos</h1>
+                <h1 class="titulo__border">Proyectos</h1>
+            </div>
+            
             <div class="proyectos__container">
                 
                 <div class="proyectos__card">
@@ -88,7 +98,9 @@
 
         <section class="conocimientos">
             <div class="conocimientos__container">
-                <h1>Conocimientos</h1>
+                <div class="title-container">
+                    <h1 class="conocimientos__titulo">Conocimientos</h1>
+                </div>
                 <div class="conocimientos__grid">
                     <div class="conocimientos__skill">
                         <div class="div__html"></div>
@@ -166,7 +178,9 @@
         </section>
 
         <section id="sobremi" class="sobremi">
-            <h1>Sobre mí</h1>
+            <div class="title-container">
+                <h1 class="sobremi__titulo">Sobre mí</h1>
+            </div>
             <div class="sobremi__grid">
                 <div class="sobremi__foto">
                     <div class="inner-card">
@@ -194,28 +208,24 @@
                     <div class="inner-card">
                         <h2>Prototipado Inspirado</h2>
                         <p>Desarrollo prototipos a mano alzada para visualizar las ideas y mejorar la comunicación con el cliente.</p>
-                        <div class="circle"></div>
                     </div>
                 </div>
                 <div class="sobremi__servicio2">
                     <div class="inner-card">
                         <h2>Diseño UX/UI</h2>
                         <p>Diseño interfaces de usuario intuitivas y atractivas en Figma, garantizando una experiencia de usuario fluida.</p>
-                        <div class="circle"></div>
                     </div>
                 </div>
                 <div class="sobremi__servicio3">
                     <div class="inner-card">
                         <h2>Desarrollo web</h2>
                         <p>Transformo prototipos en sitios web funcionales utilizando las tecnologías con las que mejor me desempeño</p>
-                        <div class="circle"></div>
                     </div>
                 </div>
                 <div class="sobremi__servicio4">
                     <div class="inner-card">
                         <h2>Diseño responsive</h2>
                         <p>Transformo prototipos en sitios web funcionales utilizando tecnologías adecuadas</p>
-                        <div class="circle"></div>
                     </div>
                 </div>
             </div>
