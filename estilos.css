@@ -14,6 +14,12 @@ h1{
     text-align: center;
     font-size: 6rem;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
 }
 
 /* Navegacion */
@@ -38,6 +44,8 @@ ul{
     margin: 0 auto;
     justify-content: space-around;
     list-style: none;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 ul li{
@@ -74,6 +82,8 @@ ul li{
     color: transparent;
     margin: 0;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    background-image: linear-gradient(45deg, #233D56, #F2D6AD); /* Degradado sutil */
 }
 
 .inicio__braian{
