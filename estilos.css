@@ -447,10 +447,61 @@ footer{
     margin: 20px;
 }
 
-.form__input{
-    
+.form{
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
 }
 
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 1fr;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form__input{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+}
+
+.form__input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+}
+
+.form__cta{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    background-color: #089fe0;
+    color: #fff;
+    font-weight: 400;
+    padding: .7em 0;
+    border: .2em;
+    cursor: pointer;
+}
+
+/* MediaQuerys */
+
+@media (max-width:450px){
+    .form{
+        padding: 3.5em 1em;
+    }
+}
 
 /* Animaciones y decoracion */
 
