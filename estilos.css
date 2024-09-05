@@ -447,52 +447,90 @@ footer{
     margin: 20px;
 }
 
-.form{
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
     background-color: white;
     width: 90%;
     max-width: 400px;
     border-radius: 1em;
     padding: 3.5em 1.5em;
     margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form__container{
+.form__container {
     width: 100%;
     display: grid;
     gap: 1em;
     grid-auto-columns: 1fr;
 }
 
-.form__title{
+.form__title {
     text-align: center;
     font-size: 1.9rem;
     font-family: 'Poppins', sans-serif;
 }
 
-.form__input{
+.form__input {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     padding: .8em 1em;
     outline: none;
-    border: none;
     border: 1px solid #bbb0b0;
+    border-radius: .3em;
+    transition: border-color 0.3s ease;
 }
 
-.form__input--message{
+.form__input:focus {
+    border-color: #089fe0;
+}
+
+.form__input--message {
     resize: none;
     padding: 1.8em 1em;
     margin-bottom: 1.5em;
 }
 
-.form__cta{
+.form__cta {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     background-color: #089fe0;
     color: #fff;
     font-weight: 400;
     padding: .7em 0;
-    border: .2em;
+    border: none;
+    border-radius: .3em;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form__cta:hover {
+    background-color: #007bbd;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    border-radius: .3em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* MediaQuerys */

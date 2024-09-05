@@ -23,6 +23,7 @@
 
     <!-- JavaSCript -->
     <script src="./mensaje_mail.js"></script>
+    <script src="./validacion__mail.js"></script>
 
 </head>
 
@@ -266,33 +267,19 @@
                 </div>
                 <div class="contacto__form">
 
-                    <form class="form">
-                        <div class="form__container">
-                            <h2 class="form__title">Contáctame</h2>
-                            <input type="text" class="form__input" placeholder="Nombre">
-                            <input type="email" class="form__input" placeholder="Email">
-                            <textarea class="form__input form__input--message" placeholder="Mensaje"></textarea>
-                        
-                            <input type="submit" value="Enviar" class="form__cta">
-                        </div>
-                    </form>
-
-                    <p>Aqui iria un form</p>
-
-                    <button type="button" class="btn btn-primary" id="liveToastBtn">Enviar mail</button>
-
-                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                            <div class="toast-header">
-                                <img src="..." class="rounded me-2" alt="...">
-                                <strong class="me-auto">Bootstrap</strong>
-                                <small>11 mins ago</small>
-                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    <div class="form-container">
+                        <form class="form" id="contactForm">
+                            <div class="form__container">
+                                <h2 class="form__title">Contáctame</h2>
+                                <input type="text" class="form__input" placeholder="Nombre" id="name" required>
+                                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <textarea class="form__input form__input--message" placeholder="Mensaje" id="message" required></textarea>
+                                <input type="submit" value="Enviar" class="form__cta">
                             </div>
-                            <div class="toast-body">
-                                <p>Mail enviado</p>
-                            </div>
-                        </div>
+                        </form>
+                        <div class="popup" id="popup">Mensaje enviado correctamente.</div>
+                    </div>
+
 
                 </div>
             </div>
