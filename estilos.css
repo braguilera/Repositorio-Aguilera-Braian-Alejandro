@@ -101,6 +101,11 @@ ul li{
     font-weight: bold;
 }
 
+li a{
+    text-decoration: none;
+    color: #9050dd;
+}
+
 /* Inicio */
 
 .inicio{
