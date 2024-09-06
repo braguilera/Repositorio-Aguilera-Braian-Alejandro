@@ -416,13 +416,86 @@ li a{
     grid-row-start: 4;
 }
         
+/* Oleaje encima del footer */
+
+.oleadas{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./img/wave.png);
+    background-size: 1000px 100px;
+}
+
+.ola1{
+    animation: oleaje 30s linear infinite;
+    z-index: 9;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.ola2{
+    animation: oleaje2 15s linear infinite;
+    z-index: 8;
+    opacity: .5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.ola3{
+    animation: oleaje 30s linear infinite;
+    z-index: 7;
+    opacity: .2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+.ola4{
+    animation: oleaje2 5s linear infinite;
+    z-index: 6;
+    opacity: .7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+
+
+@keyframes oleaje{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes oleaje2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
 
 /* Contacto */
 
 footer{
     width: 100%;
     height: auto;
-    background: linear-gradient( to top, #9050dde0 , #ae89db);
+    background-color: #fff;
+    position: relative;
 }
 
 .contacto{
@@ -465,34 +538,40 @@ footer{
 
 
 .contacto__botones{
-    background-color: #089fe0;
+    background-color: #ae89db;
     display: flex;
     justify-content: center;
     border-radius: .4rem;
     width: 100%;
     padding: .2rem 0;
-    font-size: .8em;
+    font-size: .6em;
     height: 2rem;
     align-items: center;
     text-decoration: none;
     color: #f5f4f4;
+    font-family: 'Lato', sans-serif;
+}
+
+.contacto__botones:hover{
+    background-color: #9050dd;
+    transition: background-color 0.3s ease;
 }
 
 .contacto__mail a{
-    background-color: #089fe0;
+    background-color: #ae89db;
     border-radius: .4rem 0 0 .4rem;
+    margin-right: 4px;
 }
 
 .contacto__mail button{
-    border: 3px solid #089fe0;
+    border: none;
     background-color: #fff;
     border-radius: 0 .4rem .4rem 0;
-    color: #007bbd;
     cursor: pointer;
 }
 
 .contacto__mail button:hover{
-    background: #089fe0;
+    scale: 1.2;
     transition-duration: .4s;
 }
 
@@ -547,7 +626,7 @@ footer{
 .form__cta {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    background-color: #089fe0;
+    background-color: #ae89db;
     color: #fff;
     font-weight: 400;
     padding: .7em 0;
@@ -558,7 +637,7 @@ footer{
 }
 
 .form__cta:hover {
-    background-color: #007bbd;
+    background-color: #9050dd;
 }
 
 .popup {
