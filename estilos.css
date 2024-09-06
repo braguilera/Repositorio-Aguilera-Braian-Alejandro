@@ -422,7 +422,7 @@ li a{
 footer{
     width: 100%;
     height: auto;
-    background-color: #7803FB;
+    background: linear-gradient( to top, #9050dde0 , #ae89db);
 }
 
 .contacto{
@@ -451,12 +451,49 @@ footer{
     grid-template-rows: 30% 50px;
     align-items: center;
     align-content: center;
+    gap: 10px;
 }
 
 .contacto__info p{
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
+.contacto__mail{
+    display: flex;
+}
+
+
+.contacto__botones{
+    background-color: #089fe0;
+    display: flex;
+    justify-content: center;
+    border-radius: .4rem;
+    width: 100%;
+    padding: .2rem 0;
+    font-size: .8em;
+    height: 2rem;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f4f4;
+}
+
+.contacto__mail a{
+    background-color: #089fe0;
+    border-radius: .4rem 0 0 .4rem;
+}
+
+.contacto__mail button{
+    border: 3px solid #089fe0;
+    background-color: #fff;
+    border-radius: 0 .4rem .4rem 0;
+    color: #007bbd;
+}
+
+.contacto__mail button hover{
+    
+}
+
 
 .form-container {
     display: flex;
