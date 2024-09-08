@@ -42,7 +42,7 @@ h1 {
 .titulo__circle{
     width: 150px;
     height: 150px;
-    background-color: #D556FA;
+    background-color: #232323;
     border-radius: 100vmax;
     z-index: 2;
     position: absolute;
