@@ -26,7 +26,7 @@ p{
 
 .title-container{
     position: relative;
-    width: 100%;
+    max-width: 1200px;
     height: 150px;
 }
 
@@ -168,7 +168,6 @@ li a{
     scale: 2;
 }
 
-
 .inicio__contacto__linea{
     width: 2px;
     height: 100px;
@@ -176,13 +175,10 @@ li a{
     align-self: center;
 }
 
-
-
 /* Proyectos */
 
 .proyectos{
-    max-width: 1200px;
-    height: 1000px;
+    height: auto;
     margin: 0 auto;
     background: var(--bg_section_color);
     border-radius: 16px;
@@ -190,23 +186,18 @@ li a{
     z-index: 0;
 }
 
-.proyectos .titulo__fill, .proyectos .titulo__border{
-    left: 0;
-}
-
-
 .proyectos .titulo__circle{
-    left: 15%;
+    left: 33%;
 }
 
 .proyectos__container{
     margin: 0 auto;
-    width: 90%;
+    max-width: 1200px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 380px;
-    gap: 50px;
-
+    padding: 100px 0;
+    gap: 100px;
 }
 
 .proyectos__card{
@@ -219,7 +210,6 @@ li a{
     border-radius: 16px;
     backdrop-filter: blur(16px);
     overflow: hidden;
-    margin-top: 200px;
 }
 
 .card__fecha{
@@ -261,6 +251,8 @@ li a{
 
 .conocimientos{
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .conocimientos__container{
@@ -325,6 +317,17 @@ li a{
 .conocimientos__card h2{
     position: absolute;
     top: 0;
+
+}
+
+.conocimientos__separador{
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    border-bottom: 1px solid gray;
+    top: 16%;
+    left: 50%;
+    translate: -50%;
 }
 
 .conocimientos__frontend::before{
@@ -357,13 +360,8 @@ li a{
     width: 3rem;
 }
 
-.conocimientos .titulo__fill, .conocimientos .titulo__border{
-    left: 0%;
-}
-
-
 .conocimientos .titulo__circle{
-    left: 20%;
+    left: 70%;
 }
 
 /* Sobre mi */
@@ -396,12 +394,18 @@ li a{
 
 .inner-card {
     position: relative;
-    background: var(--bg_section_color);
+
     border-radius: 12px;
     width: 100%;
     height: 100%;
     overflow: hidden;
     padding: 10px;
+    background: rgba(174, 137, 219, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(174, 137, 219, 0.3);
 }
 
 
