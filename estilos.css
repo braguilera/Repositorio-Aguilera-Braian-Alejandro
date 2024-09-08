@@ -176,14 +176,17 @@ li a{
     transition-duration: .3s;
 }
 
-.inicio__contacto__container img{
+.inicio__contacto__container a{
     cursor: pointer;
     z-index: 2;
+    position: relative;
+    scale: 1.2;
+    transition: scale .5s ease;
 }
 
-.inicio__contacto__container img:hover{
+.inicio__contacto__container a:hover{
     transition-duration: .3s;
-    scale: 2;
+    scale: 1.8;
 }
 
 .inicio__contacto__linea{
