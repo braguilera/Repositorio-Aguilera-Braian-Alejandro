@@ -28,6 +28,7 @@ p{
     position: relative;
     max-width: 1200px;
     height: 150px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -382,15 +383,9 @@ li a{
     margin-top: 150px;
 }
 
-.sobremi .titulo__fill, .sobremi .titulo__border{
-    left: 0;
-}
-
-
 .sobremi .titulo__circle{
-    left: 25%;
+    left: 54%;
 }
-
 
 .inner-card {
     position: relative;
