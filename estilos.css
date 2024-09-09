@@ -385,6 +385,14 @@ li a{
     left: 70%;
 }
 
+.conocimientos__ola{
+    position: absolute;
+    height: 50%;
+    left: -30%;
+    z-index: -2;
+    transform: rotate(90deg);
+}
+
 /* Sobre mi */
 
 .sobremi {
@@ -431,7 +439,6 @@ li a{
 }
 
 .sobremi__foto img{
-    
     width:  100%;
 }
 
