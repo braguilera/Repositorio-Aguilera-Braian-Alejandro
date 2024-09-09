@@ -43,7 +43,7 @@ h1 {
 .titulo__circle{
     width: 150px;
     height: 150px;
-    background-color: #232323;
+    background-color: #AE89DB;
     border-radius: 100vmax;
     z-index: 2;
     position: absolute;
@@ -291,7 +291,6 @@ li a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 60px;
-
 }
 
 .conocimientos__card{
@@ -381,6 +380,10 @@ li a{
     width: 3rem;
 }
 
+.conocimientos .title-container{
+    translate: -10%;
+}
+
 .conocimientos .titulo__circle{
     left: 70%;
 }
@@ -403,15 +406,18 @@ li a{
 .sobremi__container{
     position: relative;
     max-width: 1200px;
-    background-color: #089fe0;
     margin: 0 auto;
+    display: flex;
 }
 
 .sobremi__grid {
-    max-width: 1000px;
-    gap: 30px;
-    margin: 0 auto;
-    margin-top: 150px;
+    max-width: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    padding: 100px 50px;
 }
 
 .sobremi .titulo__circle{
@@ -424,11 +430,22 @@ li a{
     height: 100%;
     overflow: hidden;
     padding: 10px;
+    
 }
         
 .sobremi__foto{
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    mask-image: linear-gradient(
+        #EDF0F7 80%,
+        transparent
+    );
+}
+
+.sobremi__parrafo{
+    grid-column: span 3 / span 3;
+    font-size: 20px;
 }
 
 .sobremi__softskill{
@@ -436,12 +453,42 @@ li a{
     flex-direction: row;
     background-color: white;
     margin: 0 auto;
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
 }
 
 .sobremi__softskill ul{
     display: flex;
     flex-direction: column;
-    
+    text-align: center;
+    margin: 0;
+    list-style: circle;
+}
+
+.sobremi__softskill li{
+    cursor:default;
+    text-align: left;
+    list-style: circle;
+}
+
+.sobremi__servicio1{
+    grid-row-start: 2;
+
+}
+
+.sobremi__servicio2{
+    grid-row-start: 2;
+
+}
+
+.sobremi__servicio3{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.sobremi__servicio4{
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
 
 .sobremi aside{
