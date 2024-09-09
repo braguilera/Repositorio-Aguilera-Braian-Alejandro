@@ -401,17 +401,14 @@ li a{
 }
 
 .sobremi__container{
+    position: relative;
     max-width: 1200px;
     background-color: #089fe0;
-    position: absolute;
     margin: 0 auto;
 }
 
 .sobremi__grid {
     max-width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 100px);
     gap: 30px;
     margin: 0 auto;
     margin-top: 150px;
@@ -423,23 +420,42 @@ li a{
 
 .inner-card {
     position: relative;
-    border-radius: 12px;
     width: 100%;
     height: 100%;
     overflow: hidden;
     padding: 10px;
-    background: rgba(174, 137, 219, 0.39);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(174, 137, 219, 0.3);
 }
         
 .sobremi__foto{
     width: 100px;
     height: 100px;
 }
+
+.sobremi__softskill{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.sobremi__softskill ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sobremi aside{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobremi__servicios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
 /* Oleaje encima del footer */
 
 .oleadas{
