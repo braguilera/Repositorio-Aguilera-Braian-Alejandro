@@ -40,6 +40,11 @@ h1 {
     font-family: 'Poppins', sans-serif;
 }
 
+h2{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
 .titulo__circle{
     width: 150px;
     height: 150px;
@@ -233,9 +238,17 @@ li a{
     overflow: hidden;
 }
 
+.proyectos__container h2{
+    margin: 0;
+    margin-top: 10px;
+}
+
 .card__fecha{
     margin: 0;
     color: #808080;
+    position: absolute;
+    top: 10%;
+    right: 10%;
 }
 
 .proyectos__lucas{
@@ -266,6 +279,47 @@ li a{
     right: 0;
     top: -80px;
     position: absolute;
+}
+
+.card__skills{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-items: center;
+}
+
+.card__skills img{
+    width: 40px;
+    height: 40px;
+}
+
+.card__skills p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.botones__skills{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 18%;
+    right: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.skills__boton{
+    height: 30px;
+    padding: 4px;
+    background-color: #F4F3F3;
+    border-radius: 0 0 8px 8px;
+    transition: scale .5s ease;
+}
+
+.skills__boton:hover{
+    scale: 1.2;
+
 }
 
 /* Conocimientos */
@@ -337,7 +391,6 @@ li a{
 .conocimientos__card h2{
     position: absolute;
     top: 0;
-
 }
 
 .conocimientos__separador{
@@ -411,17 +464,17 @@ li a{
 }
 
 .sobremi__grid {
-    max-width: 600px;
-
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 200px);
     gap: 8px;
-    padding: 100px 50px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
 .sobremi .titulo__circle{
-    left: 54%;
+    left: 53%;
 }
 
 .inner-card {
@@ -430,7 +483,6 @@ li a{
     height: 100%;
     overflow: hidden;
     padding: 10px;
-    
 }
         
 .sobremi__foto{
@@ -441,42 +493,26 @@ li a{
         #EDF0F7 80%,
         transparent
     );
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
 .sobremi__parrafo{
-    grid-column: span 3 / span 3;
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
     font-size: 20px;
 }
 
-.sobremi__softskill{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    margin: 0 auto;
-    grid-row: span 2 / span 2;
-    grid-row-start: 2;
-}
-
-.sobremi__softskill ul{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-    list-style: circle;
-}
-
-.sobremi__softskill li{
-    cursor:default;
-    text-align: left;
-    list-style: circle;
-}
-
 .sobremi__servicio1{
+    grid-column-start: 2;
     grid-row-start: 2;
 
 }
 
 .sobremi__servicio2{
+    grid-column-start: 3;
     grid-row-start: 2;
 
 }
@@ -491,17 +527,32 @@ li a{
     grid-row-start: 3;
 }
 
-.sobremi aside{
+
+.sobremi__softskill{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: white;
+    margin: 0 auto;
+    grid-column: span 3 / span 3;
+    grid-row-start: 4;
+    width: 100%;
+    height: auto;
 }
 
-.sobremi__servicios{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+.sobremi__softskill ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0;
+    list-style: circle;
+    width: 100%;
 }
 
+.sobremi__softskill li{
+    cursor:default;
+    text-align: left;
+    list-style: circle;
+}
 
 /* Oleaje encima del footer */
 
