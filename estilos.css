@@ -396,8 +396,14 @@ li a{
 /* Sobre mi */
 
 .sobremi {
-    max-width: 1200px;
+    width: 100%;
     height: 1000px;
+}
+
+.sobremi__container{
+    max-width: 1200px;
+    background-color: #089fe0;
+    position: absolute;
     margin: 0 auto;
 }
 
@@ -417,7 +423,6 @@ li a{
 
 .inner-card {
     position: relative;
-
     border-radius: 12px;
     width: 100%;
     height: 100%;
@@ -430,68 +435,11 @@ li a{
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(174, 137, 219, 0.3);
 }
-
-
-.sobremi__grid .sobremi__foto {
-    grid-row: span 2 / span 2;
-    width: 200px;
-    margin: 0 auto;
-}
-
-.sobremi__foto img{
-    width:  100%;
-}
-
-.sobremi__softskill {
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 3;
-}
-
-
-.sobremi__softskill ul{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 10px;
-    list-style: circle;
-}
-
-.sobremi__softskill li{
-    font-weight: normal;
-    cursor: default;
-}
-
-.sobremi__parrafo {
-    grid-column: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 1;
-}
-
-.sobremi__servicio1 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-.sobremi__servicio2 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 2;
-}
-
-.sobremi__servicio3 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 4;
-}
-
-.sobremi__servicio4 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 4;
-}
         
+.sobremi__foto{
+    width: 100px;
+    height: 100px;
+}
 /* Oleaje encima del footer */
 
 .oleadas{
