@@ -531,12 +531,14 @@ li a{
 .sobremi__softskill{
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background: linear-gradient(#fff, transparent);
     margin: 0 auto;
     grid-column: span 3 / span 3;
     grid-row-start: 4;
     width: 100%;
     height: auto;
+    padding: 10px;
+    border-radius: 32px;
 }
 
 .sobremi__softskill ul{
@@ -544,14 +546,19 @@ li a{
     flex-direction: row;
     text-align: center;
     margin: 0;
-    list-style: circle;
+
     width: 100%;
 }
 
 .sobremi__softskill li{
     cursor:default;
     text-align: left;
-    list-style: circle;
+    border-right: 1px solid #232323;
+    padding: 8px;
+}
+
+.sobremi__softskill li:last-child{
+    border-right: none;
 }
 
 /* Oleaje encima del footer */
