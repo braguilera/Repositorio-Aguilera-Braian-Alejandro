@@ -299,27 +299,29 @@ li a{
 
 .botones__skills{
     display: flex;
-    width: 150px;
+    width: 30%;
     height: 50px;
     position: absolute;
     bottom: 18%;
     right: 5%;
     align-items: center;
     justify-content: space-evenly;
-
+    opacity: 1;
 }
 
-.skills__boton{
-    height: 30px;
-    padding: 4px;
-    background-color: #F4F3F3;
-    border-radius: 0 0 8px 8px;
-    transition: scale .5s ease;
+.botones__skills a{
+    text-decoration: none;
+    color: #EDF0F7;
+    background-color: #ae89db;
+    padding: 8px 8px;
+    margin: 0;
+    border-radius: 32px;
+    transition: background-color 0.3s ease;
 }
 
-.skills__boton:hover{
-    scale: 1.2;
 
+.botones__skills a:hover{
+    background-color: #9050DD;
 }
 
 /* Conocimientos */
