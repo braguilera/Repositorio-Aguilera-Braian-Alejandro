@@ -394,7 +394,7 @@ li a{
 
 .conocimientos__card h2{
     position: absolute;
-    top: 0;
+    top: -5%;
     border-bottom: 1px solid #232323;
     width: 90%;
     text-align: center;
