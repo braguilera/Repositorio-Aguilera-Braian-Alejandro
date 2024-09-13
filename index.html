@@ -21,9 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">+
 
 
-    <!-- JavaSCript -->
-    <script src="./mensaje_mail.js"></script>
-    <script src="./validacion__mail.js"></script>
+
 
 </head>
 
@@ -319,15 +317,25 @@
             <div class="contacto__container">
                 <div class="contacto__info">
                     <p>Interesado en colaborar o simplemente quieres saludar? ¡No dudes en contactarme!</p>
-                    <div class="contacto__mail">
-                        <a href="mailto:braaguileraa@gmail.com" class="contacto__botones"> Mail</a>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom"><img src="./img/copy.svg" alt="Boton para copiar el mail"></button>
-                    </div>
                     
-                    <a href="https://wa.me/+541137763097?text=Hola!%20Te%20hablo%20desde%20tu%20portafolio,%20quer%C3%ADa%20contactar%20con%20vos%20para..." class="contacto__botones" target="_blank"> WhatsApp</a>
-                    <a href="https://www.linkedin.com/in/braian-alejandro-aguilera-bb5959217/" target="_blank" rel='noreferrer' class="contacto__botones"> LinkedIn</a>
-
+                    <div class="contacto__mail">
+                        <a href="mailto:braaguileraa@gmail.com" class="contacto__botones">Mail</a>
+                
+                        <div class="tooltip-container">
+                            <button id="copyBtn" type="button" class="btn btn-secondary">
+                                <img src="./img/copy.svg" alt="Boton para copiar el mail">
+                            </button>
+                            <span class="tooltip-text">Copiar</span>
+                        </div>
+                    </div>
+                
+                    <div id="alertMessage" class="alert-message" style="display: none;">Mail copiado</div>
+                
+                    <a href="https://wa.me/+541137763097?text=Hola!%20Te%20hablo%20desde%20tu%20portafolio,%20quer%C3%ADa%20contactar%20con%20vos%20para..." class="contacto__botones" target="_blank">WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/braian-alejandro-aguilera-bb5959217/" target="_blank" rel='noreferrer' class="contacto__botones">LinkedIn</a>
                 </div>
+                
+                
                 <div class="contacto__form">
 
                     <div class="form-container">
@@ -348,5 +356,9 @@
 
 
 </body>
+
+<!-- JavaSCript -->
+<script src="./mensaje_mail.js"></script>
+<script src="./validacion__mail.js"></script>
 
 </html>

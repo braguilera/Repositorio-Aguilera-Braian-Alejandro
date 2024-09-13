@@ -639,13 +639,11 @@ footer{
     grid-column-start: 1;
     grid-column-end: 4;
 }
-
-.contacto__mail{
+.contacto__mail {
     display: flex;
 }
 
-
-.contacto__botones{
+.contacto__botones {
     background-color: #ae89db;
     display: flex;
     justify-content: center;
@@ -660,28 +658,73 @@ footer{
     font-family: 'Lato', sans-serif;
 }
 
-.contacto__botones:hover{
+.contacto__botones:hover {
     background-color: #9050dd;
     transition: background-color 0.3s ease;
 }
 
-.contacto__mail a{
+.contacto__mail a {
     background-color: #ae89db;
-    border-radius: .4rem 0 0 .4rem;
+    border-radius: .4rem;
     margin-right: 4px;
 }
 
-.contacto__mail button{
-    border: none;
-    background-color: #fff;
-    border-radius: 0 .4rem .4rem 0;
-    cursor: pointer;
+.tooltip-container {
+    position: relative;
+    display: inline-block;
 }
 
-.contacto__mail button:hover{
-    scale: 1.2;
+.tooltip-container button {
+    border: none;
+    background-color: #fff;
+    border-radius: .4rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.tooltip-container button:hover {
+    background-color: #ae89db56;
     transition-duration: .4s;
-    fill: #089fe0;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width:120px;
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.alert-message {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background: #9050DD;
+    padding: 4px 8px;
+    border-radius: .4rem;
+    right: 2%;
+    bottom: 2%;
 }
 
 
