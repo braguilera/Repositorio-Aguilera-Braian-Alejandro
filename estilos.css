@@ -38,6 +38,7 @@ h1 {
     margin: 50px;
     line-height: 1.2;
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
 
 h2{
@@ -509,6 +510,10 @@ li a{
     grid-column-start: 2;
     grid-row-start: 1;
     font-size: 20px;
+}
+
+.sobremi__parrafo h2{
+    text-align: center;
 }
 
 .sobremi__servicio1{
