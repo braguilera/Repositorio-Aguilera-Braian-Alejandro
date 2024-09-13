@@ -632,7 +632,7 @@ footer{
     grid-template-rows: 30% 50px;
     align-items: center;
     align-content: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .contacto__info p{
@@ -704,12 +704,6 @@ footer{
     display: grid;
     gap: 1em;
     grid-auto-columns: 1fr;
-}
-
-.form__title {
-    text-align: center;
-    font-size: 1.9rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 .form__input {
