@@ -19,7 +19,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     emailjs.send("braaguileraa", "template_tpcebzi", templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            showPopup('Mensaje enviado correctamente');
+            showPopup();
         })
         .catch(function(error) {
             console.error('FAILED...', error);
@@ -28,12 +28,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 });
 
-  // Función para mostrar un popup de feedback
-function showPopup(message) {
+function showPopup() {
     const popup = document.getElementById('popup');
-    popup.innerText = message;
-    popup.style.display = 'block';
-    setTimeout(() => {
-        popup.style.display = 'none';
+    popup.classList.add('show');
+
+    // Ocultar el popup después de 3 segundos
+    setTimeout(function() {
+        popup.classList.remove('show');
     }, 3000);
 }

@@ -716,7 +716,6 @@ footer{
     color: #fff;
     font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
-
     margin-top: 10px;
     display: none;
     position: absolute;
@@ -760,7 +759,7 @@ footer{
 }
 
 .form__input:focus {
-    border-color: #089fe0;
+    border-color: #9050DD;
 }
 
 .form__input--message {
@@ -787,16 +786,18 @@ footer{
 }
 
 .form__popup {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: #4CAF50;
+    display: none;
+    position: absolute;
+    background-color: #9050DD;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.2rem;
     opacity: 0;
     transition: opacity 0.5s ease;
+    font-family: 'Lato', sans-serif;
+    padding: 4px 8px;
+    border-radius: .4rem;
+    right: 2%;
+    bottom: 2%;
 }
 
 .form__popup.show {
@@ -872,6 +873,13 @@ footer{
 }
 
 /* Animaciones */
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
 
 @keyframes oleaje{
     0%{
