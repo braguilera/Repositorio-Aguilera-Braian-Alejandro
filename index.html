@@ -325,7 +325,7 @@
                             <button id="copyBtn" type="button" class="btn btn-secondary">
                                 <img src="./img/copy.svg" alt="Boton para copiar el mail">
                             </button>
-                            <span class="tooltip-text">Copiar</span>
+                            <span class="tooltip-text">Copiar mail</span>
                         </div>
                     </div>
                 
@@ -337,19 +337,24 @@
                 
                 
                 <div class="contacto__form">
-
                     <div class="form-container">
                         <form class="form" id="contactForm">
                             <div class="form__container">
                                 <input type="text" class="form__input" placeholder="Nombre" id="name" required>
                                 <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <input type="text" class="form__input" placeholder="Asunto" id="subject" required>
                                 <textarea class="form__input form__input--message" placeholder="Mensaje" id="message" required></textarea>
                                 <input type="submit" value="Enviar" class="form__cta">
                             </div>
                         </form>
                     </div>
-
                 </div>
+                
+                <!-- Popup de éxito -->
+                <div id="popup" class="popup" style="display: none;">
+                    Mensaje enviado
+                </div>
+
             </div>
         </div>
     </footer>
@@ -359,6 +364,6 @@
 
 <!-- JavaSCript -->
 <script src="./mensaje_mail.js"></script>
-<script src="./validacion__mail.js"></script>
+<script src="./enviar_mail.js"></script>
 
 </html>
