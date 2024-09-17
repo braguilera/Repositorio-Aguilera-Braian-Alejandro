@@ -86,8 +86,9 @@ h3{
 header{
     width: 100vw;
     height: 60px;
-    position: sticky;
+    display: flex;
     align-items: center;
+    position: sticky;
     top: 0;
     z-index: 10;
     animation: enganchar_nav linear both;
@@ -95,32 +96,7 @@ header{
     animation-range: 0 200px;
 }
 
-.hamburger-menu {
-    display: none; /* Ocultar en vistas de escritorio */
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.hamburger-icon {
-    font-size: 30px;
-    color: white;
-}
-
-.menu-container {
-    width: 100vw;
-    height: 60px;
-    display: flex;
-
-}
-
-.menu-container nav{
-    width: 100%;
-}
-
-.menu-container nav ul {
+ul{
     display: flex;
     padding: 20px 0 20px 0;
     width: 50%;
@@ -157,7 +133,7 @@ header{
     right: 0;
 }
 
-.menu-container nav ul li a {
+li a{
     text-decoration: none;
     color: #9050dd;
 }
@@ -231,8 +207,6 @@ body.light-mode {
     background-color: #F5F4F4;
     color: #232323;
 }
-
-
 
 
 /* Inicio */
@@ -987,26 +961,6 @@ footer{
 
 /* Smartphones (Pantallas pequeñas) */
 @media (max-width: 768px) {
-    .hamburger-menu {
-        display: block; /* Mostrar el ícono en vistas móviles */
-    }
-
-    .menu-container {
-        width: 70%; /* Ajusta el tamaño si prefieres un menú más grande */
-    }
-
-    /* Ajustes para los botones de modo oscuro e idioma */
-    .switch-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .switch-btn {
-        width: 80%;
-    }
-
     .proyectos__card {
         width: 100%;
         height: auto;
