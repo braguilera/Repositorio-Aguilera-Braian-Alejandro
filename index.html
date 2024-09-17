@@ -18,30 +18,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">+
-
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 
 </head>
 
-
 <body>
-
 
     <img src="./img/triangulo.svg" alt="Triangulo en movmiento de fondo con desenfoque" class="triangulo__moviendo">
 
-
     <header>
 
-        <ul>
-            <li><a href="#nav__inicio" class="header__links">Inicio</a></li>
-            <li><a href="#nav__proyecto" class="header__links">Proyectos</a></li>
-            <li><a href="#nav__conocimientos" class="header__links">Conocimientos</a></li>
-            <li><a href="#nav__sobremi" class="header__links">Sobre mí</a></li>
-            <li><a href="#nav__contacto" class="header__links">Contacto</a></li>
-        </ul>
-    
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" id="hamburger-icon">
+                &#9776; <!-- Ícono del menú hamburguesa -->
+            </div>
+        </div>
+
+        <div class="menu-container" id="menu-container">
+            <nav>
+                <ul>
+                    <li><a href="#nav__inicio" class="header__links">Inicio</a></li>
+                    <li><a href="#nav__proyecto" class="header__links">Proyectos</a></li>
+                    <li><a href="#nav__conocimientos" class="header__links">Conocimientos</a></li>
+                    <li><a href="#nav__sobremi" class="header__links">Sobre mí</a></li>
+                    <li><a href="#nav__contacto" class="header__links">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="switch-container">
+                <!-- Botón para cambiar de idioma -->
+                <div class="language-switch">
+                    <button id="language-btn" class="switch-btn">Español</button>
+                    <div class="options" id="language-options">
+                        <span id="current-language">Español</span>
+                        <span id="other-language" onclick="switchLanguage()">Inglés</span>
+                    </div>
+                </div>
+            
+                <!-- Botón para cambiar de modo oscuro/claro -->
+                <div class="theme-switch">
+                    <button id="theme-btn" class="switch-btn">Modo Claro</button>
+                    <div class="options" id="theme-options">
+                        <span id="current-theme">Modo Claro</span>
+                        <span id="other-theme" onclick="switchTheme()">Modo Oscuro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
@@ -325,6 +348,7 @@
 
 <!-- JavaSCript -->
 <script src="./mensaje_mail.js"></script>
+<script src="./botonesHeader.js"></script>
 <script src="./enviar_mail.js"></script>
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -336,6 +360,7 @@
         });
     })();
 </script>
+
 
 
 </html>
