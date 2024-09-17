@@ -189,7 +189,7 @@ li a{
 
 .inicio__braian{
     position: absolute;
-    right: 10%;
+    right: 16%;
     bottom: -40px;
     height: 400px;
     filter: drop-shadow(0 20px 15px #23232380);
@@ -374,7 +374,7 @@ li a{
 
 .conocimientos__grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 60px;
 }
 
@@ -387,7 +387,7 @@ li a{
     align-items: center;
     justify-items: center;
     margin: 0 auto;
-    padding: 50px 10px 50px;
+    padding: 15% 10px 50px;
     position: relative;
     border-radius: 20px;
     background-color: #fff;
@@ -806,6 +806,30 @@ footer{
 }
 
 /* MediaQuerys */
+
+@media (max-width:1700px){
+    p{
+        font-size: 18px;
+    }
+
+    .inicio__braian{
+        right: 10%;
+    }
+}
+
+@media (max-width:1400px){
+    .inicio h3{
+        font-size: 116px;
+    }
+    
+    .inicio__braian{
+        right: 3%;
+    }
+
+    .inicio__contacto__container{
+        left: 6%;
+    }
+}
 
 @media (max-width:450px){
     .form{
