@@ -152,7 +152,7 @@ li a{
 }
 
 .switch-btn {
-    background-color: #233D56;
+    background-color: #ae89db;
     width: 150px;
     color: #F5F4F4;
     border: none;
@@ -164,7 +164,7 @@ li a{
 }
 
 .switch-btn:hover {
-    background-color: #7F592D;
+    background-color: #9050dd;
 }
 
 .options {
@@ -172,7 +172,7 @@ li a{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #232323;
+    background-color: #ae89db;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -186,7 +186,7 @@ li a{
 }
 
 .options span:hover {
-    background-color: #7F592D;
+    background-color: #9050dd;
     border-radius: 5px;
 }
 
