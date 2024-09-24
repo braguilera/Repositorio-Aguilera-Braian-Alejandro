@@ -1,77 +1,84 @@
-// Variable para almacenar los temporizadores de cierre
-let languageTimeout, themeTimeout;
+// Obtener los elementos del DOM
+const themeBtn = document.getElementById('theme-btn');
+const languageBtn = document.getElementById('language-btn');
+const themeOptions = document.getElementById('theme-options');
+const languageOptions = document.getElementById('language-options');
+const currentTheme = document.getElementById('current-theme');
+const currentLanguage = document.getElementById('current-language');
+const otherTheme = document.getElementById('other-theme');
+const otherLanguage = document.getElementById('other-language');
 
-// Cambiar de idioma
-function switchLanguage() {
-    const currentLanguage = document.getElementById('current-language');
-    const otherLanguage = document.getElementById('other-language');
-    const languageBtn = document.getElementById('language-btn');
+// Evento al hacer clic en el botón de idioma para mostrar las opciones
+languageBtn.addEventListener('click', function() {
+    languageOptions.classList.toggle('show-options');
+});
 
-    if (currentLanguage.innerText === 'Español') {
-        currentLanguage.innerText = 'Inglés';
-        otherLanguage.innerText = 'Español';
-        languageBtn.innerText = 'Inglés';
-    } else {
-        currentLanguage.innerText = 'Español';
-        otherLanguage.innerText = 'Inglés';
-        languageBtn.innerText = 'Español';
-    }
-}
+// Evento al hacer clic en el botón de tema para mostrar las opciones
+themeBtn.addEventListener('click', function() {
+    themeOptions.classList.toggle('show-options');
+});
 
-// Cambiar entre modo oscuro y claro
+// Cambiar el tema (modo oscuro / claro)
 function switchTheme() {
-    const currentTheme = document.getElementById('current-theme');
-    const otherTheme = document.getElementById('other-theme');
-    const themeBtn = document.getElementById('theme-btn');
-    const body = document.body;
-
-    if (currentTheme.innerText === 'Modo Claro') {
-        currentTheme.innerText = 'Modo Oscuro';
-        otherTheme.innerText = 'Modo Claro';
-        themeBtn.innerText = 'Modo Oscuro';
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
+    let theme = localStorage.getItem('theme');
+    
+    if (theme === 'dark') {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+        currentTheme.textContent = 'Modo Claro';
+        otherTheme.textContent = 'Modo Oscuro';
     } else {
-        currentTheme.innerText = 'Modo Claro';
-        otherTheme.innerText = 'Modo Oscuro';
-        themeBtn.innerText = 'Modo Claro';
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+        currentTheme.textContent = 'Modo Oscuro';
+        otherTheme.textContent = 'Modo Claro';
     }
 }
 
-// Mostrar opciones cuando se hace clic en el botón de idioma
-document.getElementById('language-btn').addEventListener('click', function() {
-    document.querySelector('.language-switch').classList.toggle('show-options');
+// Cambiar el idioma
+function switchLanguage() {
+    let language = localStorage.getItem('language');
+    
+    if (language === 'es') {
+        localStorage.setItem('language', 'en');
+        currentLanguage.textContent = 'English';
+        otherLanguage.textContent = 'Español';
+        languageBtn.textContent = 'English';
+    } else {
+        localStorage.setItem('language', 'es');
+        currentLanguage.textContent = 'Español';
+        otherLanguage.textContent = 'English';
+        languageBtn.textContent = 'Español';
+    }
+}
+
+// Aplicar el tema y el idioma guardados al cargar la página
+window.addEventListener('DOMContentLoaded', () => {
+    let theme = localStorage.getItem('theme');
+    let language = localStorage.getItem('language');
+    
+    // Aplicar el modo oscuro si está seleccionado
+    if (theme === 'dark') {
+        document.body.classList.add('dark-mode');
+        currentTheme.textContent = 'Modo Oscuro';
+        otherTheme.textContent = 'Modo Claro';
+    } else {
+        currentTheme.textContent = 'Modo Claro';
+        otherTheme.textContent = 'Modo Oscuro';
+    }
+
+    // Aplicar el idioma guardado
+    if (language === 'en') {
+        currentLanguage.textContent = 'English';
+        otherLanguage.textContent = 'Español';
+        languageBtn.textContent = 'English';
+    } else {
+        currentLanguage.textContent = 'Español';
+        otherLanguage.textContent = 'English';
+        languageBtn.textContent = 'Español';
+    }
 });
 
-// Mostrar opciones cuando se hace clic en el botón de modo oscuro/claro
-document.getElementById('theme-btn').addEventListener('click', function() {
-    document.querySelector('.theme-switch').classList.toggle('show-options');
-});
-
-// Cerrar opciones después de cierto tiempo de dejar el mouse fuera del botón de idioma
-document.querySelector('.language-switch').addEventListener('mouseleave', function() {
-    clearTimeout(languageTimeout);
-    languageTimeout = setTimeout(() => {
-        document.querySelector('.language-switch').classList.remove('show-options');
-    }, 2000);  // 2 segundos
-});
-
-// Cancelar el temporizador si el mouse vuelve a entrar en el área de idioma
-document.querySelector('.language-switch').addEventListener('mouseenter', function() {
-    clearTimeout(languageTimeout);
-});
-
-// Cerrar opciones después de cierto tiempo de dejar el mouse fuera del botón de tema
-document.querySelector('.theme-switch').addEventListener('mouseleave', function() {
-    clearTimeout(themeTimeout);
-    themeTimeout = setTimeout(() => {
-        document.querySelector('.theme-switch').classList.remove('show-options');
-    }, 2000);  // 2 segundos
-});
-
-// Cancelar el temporizador si el mouse vuelve a entrar en el área de tema
-document.querySelector('.theme-switch').addEventListener('mouseenter', function() {
-    clearTimeout(themeTimeout);
-});
+// Asociar eventos de clic a las opciones
+otherTheme.addEventListener('click', switchTheme);
+otherLanguage.addEventListener('click', switchLanguage);

@@ -1,0 +1,39 @@
+/* Estilos para modo oscuro */
+
+.dark-mode {
+    background-color: #232323;
+    color: #F5F4F4;
+}
+
+.dark-mode .proyectos{
+    background-color: #383838;
+}
+
+.dark-mode .proyectos__contenido{
+    background-color: #232323;
+}
+
+.dark-mode .conocimientos__card{
+    background-color: #383838;
+}
+
+.dark-mode footer{
+    background-color: #050505;
+}
+
+.dark-mode .contacto__info{
+    background-color: #383838;
+}
+
+.dark-mode .form{
+    background-color: #383838;
+}
+
+.dark-mode .form__input{
+    background-color: #232323;
+    border: 1px solid #1b1a1a;
+}
+
+.dark-mode .ola{
+    background: url(./img/wave-dark.png)
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./estilos_oscuro.css">
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,6 @@
     <img src="./img/triangulo.svg" alt="Triangulo en movmiento de fondo con desenfoque" class="triangulo__moviendo">
 
     <header>
-
         <ul>
             <li><a href="#nav__inicio" class="header__links">Inicio</a></li>
             <li><a href="#nav__proyecto" class="header__links">Proyectos</a></li>
@@ -42,21 +42,21 @@
                 <button id="language-btn" class="switch-btn">Español</button>
                 <div class="options" id="language-options">
                     <span id="current-language">Español</span>
-                    <span id="other-language" onclick="switchLanguage()">Inglés</span>
+                    <span id="other-language">English</span>
                 </div>
             </div>
-        
+    
             <!-- Botón para cambiar de modo oscuro/claro -->
             <div class="theme-switch">
                 <button id="theme-btn" class="switch-btn">Modo Claro</button>
                 <div class="options" id="theme-options">
                     <span id="current-theme">Modo Claro</span>
-                    <span id="other-theme" onclick="switchTheme()">Modo Oscuro</span>
+                    <span id="other-theme">Modo Oscuro</span>
                 </div>
             </div>
         </div>
-
     </header>
+    
 
     <main>
         <img src="./img/olas.svg" alt="olas de decoración" class="ola__blur">
@@ -96,9 +96,6 @@
                     <img src="./img/projectos/Portada_proyecto_Lucas.png" alt="Foto de portada del portafolio de Lucas" class="proyectos__lucas">
 
                     <div class="proyectos__contenido">
-                        <div class="proyectos__curva">
-                            <img src="./img/Mascara_proyectos.svg" alt="Curva decorativa">
-                        </div>
                         <h2>Título del proyecto</h2>
                         <small class="card__fecha"> Marzo 2024 - Agosto 2024</small>
                         <p>Diseñé un portafolio único para Lucas David Aguilera que reflejó su marca personal y necesidades específicas. Desde el prototipo en Figma hasta el desarrollo completo con HTML, CSS y JavaScript, creé una landing page responsive, optimizando tanto la experiencia del usuario como la estética visual. Este proyecto destaca la capacidad de transformar requisitos en soluciones digitales efectivas.

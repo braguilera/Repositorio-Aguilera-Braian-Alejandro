@@ -82,8 +82,7 @@ h3{
 
 
 /* Navegacion */
-
-header{
+header {
     width: 100vw;
     height: 60px;
     display: flex;
@@ -91,23 +90,19 @@ header{
     position: sticky;
     top: 0;
     z-index: 10;
-    animation: enganchar_nav linear both;
-    animation-timeline: scroll(root);
-    animation-range: 0 200px;
 }
 
-ul{
+ul {
     display: flex;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     width: 50%;
     margin: 0 auto;
     justify-content: space-around;
     list-style: none;
     font-family: 'Raleway', sans-serif;
-
 }
 
-.header__links{
+.header__links {
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
@@ -115,7 +110,7 @@ ul{
     position: relative;
 }
 
-.header__links::after{
+.header__links::after {
     content: "";
     width: 0;
     height: 4px;
@@ -123,17 +118,17 @@ ul{
     position: absolute;
     bottom: 0;
     right: 50%;
-    transition: all .5s;
+    transition: all 0.5s;
     will-change: width;
     border-radius: 100vmax;
 }
 
-.header__links:hover::after{
+.header__links:hover::after {
     width: 100%;
     right: 0;
 }
 
-li a{
+li a {
     text-decoration: none;
     color: #9050dd;
 }
@@ -147,14 +142,15 @@ li a{
     gap: 10px;
 }
 
-.language-switch, .theme-switch {
+.language-switch,
+.theme-switch {
     position: relative;
 }
 
 .switch-btn {
     background-color: #ae89db;
     width: 150px;
-    color: #F5F4F4;
+    color: #f5f4f4;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -183,7 +179,7 @@ li a{
 .options span {
     display: block;
     padding: 10px;
-    color: #F5F4F4;
+    color: #f5f4f4;
     cursor: pointer;
 }
 
@@ -193,23 +189,10 @@ li a{
 }
 
 /* Mostrar opciones cuando el botón es activado */
-.show-options .options {
+.show-options {
     display: block;
-    width: 90%;   
+    width: 90%;
 }
-
-/* Estilos para modo oscuro */
-body.dark-mode {
-    background-color: #232323;
-    color: #F5F4F4;
-}
-
-/* Estilos para modo claro */
-body.light-mode {
-    background-color: #F5F4F4;
-    color: #232323;
-}
-
 
 /* Inicio */
 
@@ -305,7 +288,7 @@ body.light-mode {
 .proyectos{
     height: auto;
     margin: 0 auto;
-    background: var(--bg_section_color);
+    background-color: #f5f4f4;
     border-radius: 16px;
     position: relative;
     z-index: 0;
@@ -372,14 +355,6 @@ body.light-mode {
 
 .proyectos__contenido:hover{
     transform: translateY(0);
-}
-
-.proyectos__curva{
-    width: 80px;
-    height: 80px;
-    right: 0;
-    top: -80px;
-    position: absolute;
 }
 
 .card__skills{
