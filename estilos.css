@@ -159,6 +159,7 @@ li a{
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -176,6 +177,7 @@ li a{
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Lato';
 }
 
 .options span {
@@ -193,7 +195,7 @@ li a{
 /* Mostrar opciones cuando el botón es activado */
 .show-options .options {
     display: block;
-    width: 90%;
+    width: 90%;   
 }
 
 /* Estilos para modo oscuro */
@@ -351,7 +353,8 @@ body.light-mode {
 .proyectos__lucas{
     margin: 0 auto;
     border-radius: 12px;
-    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .proyectos__contenido{
@@ -1186,9 +1189,8 @@ footer{
 
 @keyframes enganchar_nav{
     to{
-        background:  #EDF0F7;
+        background:  #edf0f773;
         backdrop-filter: blur(5px);
-        scale: 1.1;
         
     }
 }
