@@ -139,59 +139,57 @@ li a {
     margin: 20px 0;
     position: absolute;
     right: 5%;
-    gap: 10px;
+    gap: 30px;
+    align-items: center;
+    width: auto;
 }
 
-.language-switch,
-.theme-switch {
-    position: relative;
+.theme-switch{
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .switch-btn {
-    background-color: #ae89db;
-    width: 150px;
-    color: #f5f4f4;
+    background-color: #343d5b;
+    width: auto;
+    height: 30px;
+    width: 65px;
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 100vmax;
+    position: relative;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.switch-btn:hover {
-    background-color: #9050dd;
-}
-
-.options {
-    display: none;
+.switch-btn::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 100%;
+    background: #f1f1f1;
+    top: 0;
     left: 0;
-    background-color: #ae89db;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Lato';
+    border-radius: 100vmax;
+    transition: left 0.3s ease;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
 }
 
-.options span {
-    display: block;
-    padding: 10px;
-    color: #f5f4f4;
-    cursor: pointer;
+.active{
+    background: rgb(226, 155, 23);
 }
 
-.options span:hover {
-    background-color: #9050dd;
-    border-radius: 5px;
+.active::after{
+    left: calc(100% - 30px);
 }
 
-/* Mostrar opciones cuando el botón es activado */
-.show-options {
-    display: block;
-    width: 90%;
+.switch-btn img {
+    width: 20px;
+    height: 20px;
 }
 
 /* Inicio */
