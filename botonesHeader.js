@@ -27,11 +27,13 @@ function switchTheme() {
         localStorage.setItem('theme', 'light');
         currentTheme.textContent = 'Modo Claro';
         otherTheme.textContent = 'Modo Oscuro';
+        themeBtn.textContent = 'Modo Claro';
     } else {
         document.body.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
         currentTheme.textContent = 'Modo Oscuro';
         otherTheme.textContent = 'Modo Claro';
+        themeBtn.textContent = 'Modo Oscuro';
     }
 }
 
@@ -62,9 +64,11 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('dark-mode');
         currentTheme.textContent = 'Modo Oscuro';
         otherTheme.textContent = 'Modo Claro';
+        themeBtn.textContent = 'Modo Oscuro';
     } else {
         currentTheme.textContent = 'Modo Claro';
         otherTheme.textContent = 'Modo Oscuro';
+        themeBtn.textContent = 'Modo Claro';
     }
 
     // Aplicar el idioma guardado
