@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title data-section="header" data-value="title">Portafolio</title>
     <link rel="stylesheet" href="./estilos.css">
     <link rel="stylesheet" href="./estilos_oscuro.css">
 
@@ -29,20 +29,20 @@
 
     <header>
         <ul>
-            <li><a href="#nav__inicio" class="header__links">Inicio</a></li>
-            <li><a href="#nav__proyecto" class="header__links">Proyectos</a></li>
-            <li><a href="#nav__conocimientos" class="header__links">Conocimientos</a></li>
-            <li><a href="#nav__sobremi" class="header__links">Sobre mí</a></li>
-            <li><a href="#nav__contacto" class="header__links">Contacto</a></li>
+            <li><a href="#nav__inicio" class="header__links" data-section="header" data-value="nav_inicio">Inicio</a></li>
+            <li><a href="#nav__proyecto" class="header__links" data-section="header" data-value="nav_proyecto">Proyectos</a></li>
+            <li><a href="#nav__conocimientos" class="header__links" data-section="header" data-value="nav_conocimientos">Conocimientos</a></li>
+            <li><a href="#nav__sobremi" class="header__links" data-section="header" data-value="nav_sobremi">Sobre mí</a></li>
+            <li><a href="#nav__contacto" class="header__links" data-section="header" data-value="nav_contacto">Contacto</a></li>
         </ul>
     
         <div class="switch-container">
             <!-- Botón para cambiar de idioma -->
             <div class="language-switch">
                 <ul>
-                    <li><a href="">ES</a></li>
+                    <li><button data-language="es">ES</button></li>
                     |
-                    <li><a href="">EN</a></li>
+                    <li><button data-language="en">EN</button></li>
                 </ul>
             </div>       
             <!-- Botón para cambiar de modo oscuro/claro -->
@@ -66,9 +66,9 @@
         </a>
 
         <section class="inicio" id="nav__inicio">
-            <p>Soy <strong>Braian Alejandro Aguilera</strong>, un fullstack enfocado en el desarrollo</p>
+            <p data-section="inicio" data-value="presentacion">Soy <strong>Braian Alejandro Aguilera</strong>, un fullstack enfocado en el desarrollo</p>
             <h3>FRONTEND</h3>
-            <a href="./img/CV-Aguilera-Braian-Alejandro.pdf" target="_blank" rel='noreferrer' class="inicio__cv">Descargar CV</a>
+            <a href="./img/CV-Aguilera-Braian-Alejandro.pdf" target="_blank" rel='noreferrer' class="inicio__cv" data-section="inicio" data-value="descargar_cv">Descargar CV</a>
             <img src="./img/Braian.png" alt="Foto de Braian" class="inicio__braian">
             <div class="inicio__contacto__container">
                 <div class="inicio__contacto__linea"></div>
@@ -84,8 +84,8 @@
 
             <div class="title-container">
                 <div class="titulo__circle"></div>
-                <h1 class="titulo__fill">Proyectos</h1>
-                <h1 class="titulo__border">Proyectos</h1>
+                <h1 class="titulo__fill" data-section="proyectos" data-value="titulo">Proyectos</h1>
+                <h1 class="titulo__border" data-section="proyectos" data-value="titulo">Proyectos</h1>
             </div>
             
             <div class="proyectos__container">
@@ -94,9 +94,9 @@
                     <img src="./img/projectos/Portada_proyecto_Lucas.png" alt="Foto de portada del portafolio de Lucas" class="proyectos__lucas">
 
                     <div class="proyectos__contenido">
-                        <h2>Título del proyecto</h2>
-                        <small class="card__fecha"> Marzo 2024 - Agosto 2024</small>
-                        <p>Diseñé un portafolio único para Lucas David Aguilera que reflejó su marca personal y necesidades específicas. Desde el prototipo en Figma hasta el desarrollo completo, creé una landing page responsive, optimizando tanto la experiencia del usuario como la estética visual. Este proyecto destaca la capacidad de transformar requisitos en soluciones digitales efectivas.
+                        <h2 data-section="proyectos" data-value="proyecto_titulo">Portafolio en landing page</h2>
+                        <small class="card__fecha" data-section="proyectos" data-value="proyecto_fecha"> Marzo 2024 - Agosto 2024</small>
+                        <p data-section="proyectos" data-value="proyecto_desc">Diseñé un portafolio único para Lucas David Aguilera que reflejó su marca personal y necesidades específicas. Desde el prototipo en Figma hasta el desarrollo completo, creé una landing page responsive, optimizando tanto la experiencia del usuario como la estética visual. Este proyecto destaca la capacidad de transformar requisitos en soluciones digitales efectivas.
                         </p>
 
                         <div class="card__skills">
@@ -109,9 +109,9 @@
                         </div>
 
                         <div class="botones__skills">
-                            <a href="https://github.com/braguilera/Portfolio-Aguilera-Lucas" target="_blank" rel='noreferrer'>Ver repositotio</a>
+                            <a href="https://github.com/braguilera/Portfolio-Aguilera-Lucas" target="_blank" rel='noreferrer' data-section="proyectos" data-value="ver_repo">Ver repositotio</a>
                             
-                            <a href="https://braguilera.github.io/Portfolio-Aguilera-Lucas/" target="_blank" rel='noreferrer'>Sitio web</a>
+                            <a href="https://braguilera.github.io/Portfolio-Aguilera-Lucas/" target="_blank" rel='noreferrer' data-section="proyectos" data-value="ver_sitio">Sitio web</a>
                         </div>
 
                     </div>
@@ -127,8 +127,8 @@
 
             <div class="title-container">
                 <div class="titulo__circle"></div>
-                <h1 class="titulo__fill">Conocimientos</h1>
-                <h1 class="titulo__border">Conocimientos</h1>
+                <h1 class="titulo__fill" data-section="conocimientos" data-value="titulo">Conocimientos</h1>
+                <h1 class="titulo__border" data-section="conocimientos" data-value="titulo">Conocimientos</h1>
             </div>
 
             <div class="conocimientos__container">
@@ -185,7 +185,7 @@
                     </div>
 
                     <div class="conocimientos__card">
-                        <h2>Herramientas</h2>
+                        <h2 data-section="conocimientos" data-value="herramientas">Herramientas</h2>
                         <div class="conocimientos__skill">
                             <img src="./img/skills/herramientas/figma.svg" alt="Figma">
                             <h3>Figma</h3>
@@ -215,8 +215,8 @@
 
             <div class="title-container">
                 <div class="titulo__circle"></div>
-                <h1 class="titulo__fill">Sobre mí</h1>
-                <h1 class="titulo__border">Sobre mí</h1>
+                <h1 class="titulo__fill" data-section="sobremi" data-value="titulo">Sobre mí</h1>
+                <h1 class="titulo__border" data-section="sobremi" data-value="titulo">Sobre mí</h1>
             </div>
 
             <article class="sobremi__container">   
@@ -231,34 +231,34 @@
 
                     <div class="sobremi__parrafo">
                         <div class="inner-card">
-                            <p>Soy un desarrollador apasionado por el frontend, con una fuerte capacidad para transformar ideas en interfaces atractivas y funcionales. Me especializo en crear experiencias de usuario intuitivas y adaptadas a las necesidades del cliente.</p>
-                            <h2>Servicios</h2>
+                            <p data-section="sobremi" data-value="descripcion">Soy un desarrollador apasionado por el frontend, con una fuerte capacidad para transformar ideas en interfaces atractivas y funcionales. Me especializo en crear experiencias de usuario intuitivas y adaptadas a las necesidades del cliente.</p>
+                            <h2 data-section="sobremi" data-value="servicios">Servicios</h2>
 
                         </div>
                     </div>
 
                     <div class="sobremi__servicio1">
                         <div class="inner-card">
-                            <h3>Prototipado Inspirado</h3>
-                            <p>Desarrollo prototipos a mano alzada para visualizar las ideas y mejorar la comunicación con el cliente.</p>
+                            <h3 data-section="sobremi" data-value="servicio1_titulo">Prototipado Inspirado</h3>
+                            <p data-section="sobremi" data-value="servicio1_desc">Desarrollo prototipos a mano alzada para visualizar las ideas y mejorar la comunicación con el cliente.</p>
                         </div>
                     </div>
                     <div class="sobremi__servicio2">
                         <div class="inner-card">
-                            <h3>Diseño UX/UI</h3>
-                            <p>Diseño interfaces de usuario intuitivas y atractivas en Figma, garantizando una experiencia de usuario fluida.</p>
+                            <h3 data-section="sobremi" data-value="servicio2_titulo">Diseño UX/UI</h3>
+                            <p data-section="sobremi" data-value="servicio2_desc">Diseño interfaces de usuario intuitivas y atractivas en Figma, garantizando una experiencia de usuario fluida.</p>
                         </div>
                     </div>
                     <div class="sobremi__servicio3">
                         <div class="inner-card">
-                            <h3>Desarrollo web</h3>
-                            <p>Transformo prototipos en sitios web funcionales utilizando las tecnologías con las que mejor me desempeño</p>
+                            <h3 data-section="sobremi" data-value="servicio3_titulo">Desarrollo web</h3>
+                            <p data-section="sobremi" data-value="servicio3_desc">Transformo prototipos en sitios web funcionales utilizando las tecnologías con las que mejor me desempeño.</p>
                         </div>
                     </div>
                     <div class="sobremi__servicio4">
                         <div class="inner-card">
-                            <h3>Diseño responsive</h3>
-                            <p>Transformo prototipos en sitios web funcionales utilizando tecnologías adecuadas</p>
+                            <h3 data-section="sobremi" data-value="servicio4_titulo">Diseño responsive</h3>
+                            <p data-section="sobremi" data-value="servicio4_desc">Transformo prototipos en sitios web funcionales utilizando tecnologías adecuadas.</p>
                         </div>
                     </div>
                     
@@ -281,15 +281,15 @@
 
         <div class="title-container">
             <div class="titulo__circle"></div>
-            <h1 class="titulo__fill">Contacto</h1>
-            <h1 class="titulo__border">Contacto</h1>
+            <h1 class="titulo__fill" data-section="footer" data-value="titulo">Contacto</h1>
+            <h1 class="titulo__border" data-section="footer" data-value="titulo">Contacto</h1>
         </div>
 
         <div class="contacto">
 
             <div class="contacto__container">
                 <div class="contacto__info">
-                    <p>Interesado en colaborar o simplemente quieres saludar? ¡No dudes en contactarme!</p>
+                    <p data-section="footer" data-value="subtitulo">Interesado en colaborar o simplemente quieres saludar? ¡No dudes en contactarme!</p>
                     
                     <div class="contacto__mail">
                         <a href="mailto:braaguileraa@gmail.com" class="contacto__botones">Mail</a>
@@ -298,11 +298,11 @@
                             <button id="copyBtn" type="button" class="btn btn-secondary">
                                 <img src="./img/copy.svg" alt="Boton para copiar el mail">
                             </button>
-                            <span class="tooltip-text">Copiar mail</span>
+                            <span class="tooltip-text" data-section="footer" data-value="tooltip-text">Copiar mail</span>
                         </div>
                     </div>
                 
-                    <div id="alertMessage" class="alert-message" style="display: none;">Mail copiado</div>
+                    <div id="alertMessage" class="alert-message" style="display: none;" data-section="footer" data-value="alerta">Mail copiado</div>
                 
                     <a href="https://wa.me/+541137763097?text=Hola!%20Te%20hablo%20desde%20tu%20portafolio,%20quer%C3%ADa%20contactar%20con%20vos%20para..." class="contacto__botones" target="_blank">WhatsApp</a>
                     <a href="https://www.linkedin.com/in/braian-alejandro-aguilera-bb5959217/" target="_blank" rel='noreferrer' class="contacto__botones">LinkedIn</a>

@@ -1,23 +1,27 @@
 {
     "header": {
+        "title": "Portfolio",
         "nav_inicio": "Home",
         "nav_proyecto": "Projects",
         "nav_conocimientos": "Skills",
         "nav_sobremi": "About me",
         "nav_contacto": "Contact"
     },
+    
     "inicio": {
         "presentacion": "I am Braian Alejandro Aguilera, a fullstack developer focused on development",
         "descargar_cv": "Download CV"
     },
+
     "proyectos": {
         "titulo": "Projects",
-        "proyecto_titulo": "Project title",
+        "proyecto_titulo": "Portfolio in landing page",
         "proyecto_fecha": "March 2024 - August 2024",
         "proyecto_desc": "I designed a unique portfolio for Lucas David Aguilera that reflected his personal brand and specific needs. From the prototype in Figma to the full development, I created a responsive landing page, optimizing both user experience and visual aesthetics. This project highlights the ability to turn requirements into effective digital solutions.",
         "ver_repo": "View repository",
         "ver_sitio": "Website"
     },
+
     "conocimientos": {
         "titulo": "Skills",
         "herramientas": "Tools"
@@ -31,5 +35,13 @@
         "servicio1_desc": "I develop hand-drawn prototypes to visualize ideas and improve communication with clients.",
         "servicio2_titulo": "UX/UI Design",
         "servicio2_desc": "I design intuitive and attractive user interfaces in Figma, ensuring a smooth user experience."
+    },
+
+    "footer": {
+        "titulo": "Contact",
+        "subtitulo": "Interested in collaborating or just want to say hello? Feel free to reach out!",
+        "tooltip-text": "Copy email",
+        "alerta": "Email copied"
     }
 }
+
