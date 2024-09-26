@@ -1,0 +1,37 @@
+{
+    "header": {
+        "nav_inicio": "Inicio",
+        "nav_proyecto": "Proyectos",
+        "nav_conocimientos": "Conocimientos",
+        "nav_sobremi": "Sobre mí",
+        "nav_contacto": "Contacto"
+    },
+
+    "inicio": {
+        "presentacion": "Soy Braian Alejandro Aguilera, un fullstack enfocado en el desarrollo",
+        "descargar_cv": "Descargar CV"
+    },
+
+    "proyectos": {
+        "titulo": "Proyectos",
+        "proyecto_titulo": "Título del proyecto",
+        "proyecto_fecha": "Marzo 2024 - Agosto 2024",
+        "proyecto_desc": "Diseñé un portafolio único para Lucas David Aguilera que reflejó su marca personal y necesidades específicas. Desde el prototipo en Figma hasta el desarrollo completo, creé una landing page responsive, optimizando tanto la experiencia del usuario como la estética visual. Este proyecto destaca la capacidad de transformar requisitos en soluciones digitales efectivas.",
+        "ver_repo": "Ver repositorio",
+        "ver_sitio": "Sitio web"
+    },
+    
+    "conocimientos": {
+        "titulo": "Conocimientos",
+        "herramientas": "Herramientas"
+    },
+    "sobremi": {
+        "titulo": "Sobre mí",
+        "descripcion": "Soy un desarrollador apasionado por el frontend, con una fuerte capacidad para transformar ideas en interfaces atractivas y funcionales. Me especializo en crear experiencias de usuario intuitivas y adaptadas a las necesidades del cliente.",
+        "servicios": "Servicios",
+        "servicio1_titulo": "Prototipado Inspirado",
+        "servicio1_desc": "Desarrollo prototipos a mano alzada para visualizar las ideas y mejorar la comunicación con el cliente.",
+        "servicio2_titulo": "Diseño UX/UI",
+        "servicio2_desc": "Diseño interfaces de usuario intuitivas y atractivas en Figma, garantizando una experiencia de usuario fluida."
+    }
+}
