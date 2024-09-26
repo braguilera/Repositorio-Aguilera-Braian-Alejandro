@@ -45,7 +45,10 @@
         "titulo": "Contact",
         "subtitulo": "Interested in collaborating or just want to say hello? Feel free to reach out!",
         "tooltip-text": "Copy email",
-        "alerta": "Email copied"
+        "alerta": "Email copied",
+        "nombre": "Name",
+        "asunto": "Subject",
+        "mensaje": "Message"
     }
 }
 

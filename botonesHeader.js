@@ -12,6 +12,9 @@ btnTheme.addEventListener('click', () =>{
 const langButtons = document.querySelectorAll("[data-language]");
 const textsToChange = document.querySelectorAll("[data-section]");
 
+const es = document.querySelector('#boton_es');
+const en = document.querySelector('#boton_en')
+
 langButtons.forEach((button) => {
     button.addEventListener("click", () =>{
         fetch(`./${button.dataset.language}.json`)
@@ -24,6 +27,15 @@ langButtons.forEach((button) => {
                     el.innerHTML = data[section][value];
                 })
             })
+
+        if(`${button.dataset.language}`=="es"){
+            es.classList.add("language__active")
+            en.classList.remove("language__active")
+        }
+        else{
+            es.classList.remove("language__active")
+            en.classList.add("language__active")
+        }
     })
 
 })

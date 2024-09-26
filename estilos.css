@@ -192,6 +192,21 @@ li a {
     height: 20px;
 }
 
+.inicio__language{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: #bbb0b0;
+    font-size: 1rem;
+    opacity: .7;
+}
+
+.language__active{
+    border-bottom: 2px solid #9050DD;
+    color: #9050DD;
+}
+
 /* Inicio */
 
 .inicio{
@@ -799,6 +814,11 @@ footer{
     display: grid;
     gap: 1em;
     grid-auto-columns: 1fr;
+}
+
+.form__container p{
+    margin: 0;
+    margin-bottom: -2%;
 }
 
 .form__input {

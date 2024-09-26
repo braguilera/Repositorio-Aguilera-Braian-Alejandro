@@ -39,11 +39,11 @@
         <div class="switch-container">
             <!-- Botón para cambiar de idioma -->
             <div class="language-switch">
-                <ul>
-                    <li><button data-language="es">ES</button></li>
-                    |
-                    <li><button data-language="en">EN</button></li>
-                </ul>
+
+                <button data-language="es" class="inicio__language language__active" id="boton_es">ES</button>
+                <strong>|</strong>
+                <button data-language="en" class="inicio__language" id="boton_en">EN</button>
+
             </div>       
             <!-- Botón para cambiar de modo oscuro/claro -->
             <div class="theme-switch">
@@ -313,10 +313,14 @@
                     <div class="form-container">
                         <form class="form" id="contactForm">
                             <div class="form__container">
-                                <input type="text" class="form__input" placeholder="Nombre" id="name" required>
-                                <input type="email" class="form__input" placeholder="Email" id="email" required>
-                                <input type="text" class="form__input" placeholder="Asunto" id="subject" required>
-                                <textarea class="form__input form__input--message" placeholder="Mensaje" id="message" required></textarea>
+                                <p data-section="footer" data-value="nombre">Nombre</p>
+                                <input type="text" class="form__input" id="name" required>
+                                <p>Mail</p>
+                                <input type="email" class="form__input" id="email" required>
+                                <p data-section="footer" data-value="asunto">Asunto</p>
+                                <input type="text" class="form__input" id="subject" required>
+                                <p data-section="footer" data-value="mensaje">Mensaje</p>
+                                <textarea class="form__input form__input--message" id="message" required></textarea>
                                 <input type="submit" value="Enviar" class="form__cta">
                             </div>
                         </form>

@@ -45,6 +45,9 @@
         "titulo": "Contacto",
         "subtitulo": "Interesado en colaborar o simplemente quieres saludar? ¡No dudes en contactarme!",
         "tooltip-text":"Copiar mail",
-        "alerta":"Mail copiado"
+        "alerta":"Mail copiado",
+        "nombre": "Nombre",
+        "asunto": "Asunto",
+        "mensaje": "Mensaje"
     }
 }
