@@ -9,7 +9,7 @@
     },
     
     "inicio": {
-        "presentacion": "I am Braian Alejandro Aguilera, a fullstack developer focused on development",
+        "presentacion": "I am <strong>Braian Alejandro Aguilera</strong>, a fullstack developer focused on development",
         "descargar_cv": "Download CV"
     },
 
@@ -34,7 +34,11 @@
         "servicio1_titulo": "Inspired Prototyping",
         "servicio1_desc": "I develop hand-drawn prototypes to visualize ideas and improve communication with clients.",
         "servicio2_titulo": "UX/UI Design",
-        "servicio2_desc": "I design intuitive and attractive user interfaces in Figma, ensuring a smooth user experience."
+        "servicio2_desc": "I design intuitive and attractive user interfaces in Figma, ensuring a smooth user experience.",
+        "servicio3_titulo": "Web Development",
+        "servicio3_desc": "I transform prototypes into functional websites using the technologies I excel at.",
+        "servicio4_titulo": "Responsive Design",
+        "servicio4_desc": "I transform prototypes into functional websites using appropriate technologies."
     },
 
     "footer": {

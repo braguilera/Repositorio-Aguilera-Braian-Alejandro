@@ -9,7 +9,7 @@
     },
 
     "inicio": {
-        "presentacion": "Soy Braian Alejandro Aguilera, un fullstack enfocado en el desarrollo",
+        "presentacion": "Soy <strong>Braian Alejandro Aguilera</strong>, un fullstack enfocado en el desarrollo",
         "descargar_cv": "Descargar CV"
     },
 
