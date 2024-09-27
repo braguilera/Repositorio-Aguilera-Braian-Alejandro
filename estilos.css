@@ -986,17 +986,23 @@ footer{
         top: 2.5%;
         cursor: pointer;
         z-index: 3;
+        border: none;
+        background-color: transparent;
     }
 
     .header__nav{
         opacity: 0;
         visibility: hidden;
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: #232323;
         top: 0;
         right: 0;
         bottom: 0;
-        width: 30%;
+        width: 50%;
         height: 100vmax;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -1010,6 +1016,27 @@ footer{
 
     .header__nav ul{
         flex-direction: column;
+        gap: 80px;
+        width: 100%;
+        padding-left: 15%;
+    }
+
+    .header__links{
+        font-size: 2rem;
+    }
+
+    .language-switch{
+        position: absolute;
+        bottom: 5%;
+        left: 15%;
+        
+    }
+
+    .switch-container{
+        position: absolute;
+        bottom: 5%;
+        right: 15%;
+        margin: 0;
     }
 }
 
