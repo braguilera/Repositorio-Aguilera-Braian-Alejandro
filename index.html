@@ -27,32 +27,41 @@
 
     <img src="./img/triangulo.svg" alt="Triangulo en movmiento de fondo con desenfoque" class="triangulo__moviendo">
 
-    <header>
-        <ul>
-            <li><a href="#nav__inicio" class="header__links" data-section="header" data-value="nav_inicio">Inicio</a></li>
-            <li><a href="#nav__proyecto" class="header__links" data-section="header" data-value="nav_proyecto">Proyectos</a></li>
-            <li><a href="#nav__conocimientos" class="header__links" data-section="header" data-value="nav_conocimientos">Conocimientos</a></li>
-            <li><a href="#nav__sobremi" class="header__links" data-section="header" data-value="nav_sobremi">Sobre mí</a></li>
-            <li><a href="#nav__contacto" class="header__links" data-section="header" data-value="nav_contacto">Contacto</a></li>
-        </ul>
-    
-        <div class="switch-container">
-            <!-- Botón para cambiar de idioma -->
-            <div class="language-switch">
+    <header >
+        <button class="abrir__menu" id="abrir">Abrir</button>
 
+        <nav class="header__nav" id="nav">
+
+
+            <button class="cerrar__menu" id="cerrar">Cerrar</button>
+    
+            <div class="language-switch">
+    
                 <button data-language="es" class="inicio__language language__active" id="boton_es">ES</button>
                 <strong>|</strong>
                 <button data-language="en" class="inicio__language" id="boton_en">EN</button>
-
-            </div>       
-            <!-- Botón para cambiar de modo oscuro/claro -->
-            <div class="theme-switch">
-                <button id="theme-btn" class="switch-btn">
-                    <span id="current-theme"><img src="./img/iconos/claro.svg" alt="Icono de modo claro"></span>
-                    <span id="other-theme"><img src="./img/iconos/oscuro.svg" alt="Icono de modo oscuro"></span>
-                </button>
+    
+            </div>     
+    
+            <ul>
+                <li><a href="#nav__inicio" class="header__links" data-section="header" data-value="nav_inicio">Inicio</a></li>
+                <li><a href="#nav__proyecto" class="header__links" data-section="header" data-value="nav_proyecto">Proyectos</a></li>
+                <li><a href="#nav__conocimientos" class="header__links" data-section="header" data-value="nav_conocimientos">Conocimientos</a></li>
+                <li><a href="#nav__sobremi" class="header__links" data-section="header" data-value="nav_sobremi">Sobre mí</a></li>
+                <li><a href="#nav__contacto" class="header__links" data-section="header" data-value="nav_contacto">Contacto</a></li>
+            </ul>
+        
+            <div class="switch-container">
+                <div class="theme-switch">
+                    <button id="theme-btn" class="switch-btn">
+                        <span id="current-theme"><img src="./img/iconos/claro.svg" alt="Icono de modo claro"></span>
+                        <span id="other-theme"><img src="./img/iconos/oscuro.svg" alt="Icono de modo oscuro"></span>
+                    </button>
+                </div>
             </div>
-        </div>
+        </nav>
+
+
     </header>
     
 
@@ -340,6 +349,7 @@
 <script src="./mensaje_mail.js"></script>
 <script src="./botonesHeader.js"></script>
 <script src="./enviar_mail.js"></script>
+<script src="./menuHamburguesa.js"></script>
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>

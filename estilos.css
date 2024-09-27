@@ -82,7 +82,7 @@ h3{
 
 
 /* Navegacion */
-header {
+.header__nav {
     width: 100vw;
     height: 60px;
     display: flex;
@@ -204,7 +204,21 @@ li a {
 
 .language__active{
     border-bottom: 2px solid #9050DD;
+    margin-bottom: -2px;
     color: #9050DD;
+}
+
+.language-switch{
+    position: absolute;
+    left: 5%;
+}
+
+.language-switch strong{
+    color: #bbb0b0;
+}
+
+.abrir__menu, .cerrar__menu{
+    display: none;
 }
 
 /* Inicio */
@@ -909,7 +923,12 @@ footer{
 }
 
 /* Tablets (Pantallas medianas) */
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
+
+    .header__links{
+        font-size: .9rem;
+    }
+
     .proyectos__container {
         grid-template-columns: 1fr;
         padding: 50px 20px;
@@ -952,6 +971,42 @@ footer{
     .sobremi__servicio4 {
         grid-column: span 1 / span 1;
         grid-row: auto;
+    }
+}
+
+@media (max-width: 900px){
+
+    .abrir__menu,.cerrar__menu{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 2.5%;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .header__nav{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        background-color: #232323;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 30%;
+        height: 100vmax;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #nav.visible{
+        opacity: 1;
+        visibility: visible;
+        z-index: 4;
+    }
+
+    .header__nav ul{
+        flex-direction: column;
     }
 }
 

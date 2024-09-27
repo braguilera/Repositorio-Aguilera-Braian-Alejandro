@@ -1,8 +1,11 @@
-// Obtener los elementos del DOM
-const hamburgerIcon = document.getElementById('hamburger-icon');
-const menuContainer = document.getElementById('menu-container');
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-// Evento al hacer clic en el ícono del menú hamburguesa
-hamburgerIcon.addEventListener('click', function() {
-    menuContainer.classList.toggle('show-menu');
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+});
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
 });
