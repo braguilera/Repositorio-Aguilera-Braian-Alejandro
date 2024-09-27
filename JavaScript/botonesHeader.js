@@ -17,7 +17,7 @@ const en = document.querySelector('#boton_en')
 
 langButtons.forEach((button) => {
     button.addEventListener("click", () =>{
-        fetch(`./${button.dataset.language}.json`)
+        fetch(`./JavaScript/${button.dataset.language}.json`)
             .then(res => res.json())
             .then(data => {
                 textsToChange.forEach((el) => {
