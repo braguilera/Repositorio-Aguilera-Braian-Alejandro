@@ -82,6 +82,7 @@ h3{
 
 
 /* Navegacion */
+
 .header__nav {
     width: 100vw;
     height: 60px;
@@ -90,6 +91,9 @@ h3{
     position: sticky;
     top: 0;
     z-index: 10;
+    animation: enganchar__nav linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
 }
 
 ul {
@@ -975,7 +979,6 @@ footer{
 }
 
 @media (max-width: 900px){
-
     .abrir__menu,.cerrar__menu{
         display: block;
         position: absolute;
@@ -1177,6 +1180,9 @@ footer{
     border: 2px solid #9050dd;
     cursor: pointer;
     transition: scale .3s ease;
+    animation: ocultar linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 10%;
 }
 
 .ir__arriba:hover{
@@ -1243,17 +1249,6 @@ footer{
     }
 }
 
-@keyframes mostrar{
-
-    0%{
-        transform: translateY(100px);
-    }
-
-    100%{
-        transform: translateY(0);
-    }
-
-}
 
 @keyframes rotar{
     0%{
