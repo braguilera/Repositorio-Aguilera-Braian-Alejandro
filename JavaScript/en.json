@@ -15,9 +15,12 @@
 
     "proyectos": {
         "titulo": "Projects",
-        "proyecto_titulo": "Portfolio in landing page",
-        "proyecto_fecha": "March 2024 - August 2024",
-        "proyecto_desc": "I designed a unique portfolio for Lucas David Aguilera that reflected his personal brand and specific needs. From the prototype in Figma to the full development, I created a responsive landing page, optimizing both user experience and visual aesthetics. This project highlights the ability to turn requirements into effective digital solutions.",
+        "proyecto_titulo_lucas": "Art Portfolio",
+        "proyecto_fecha_lucas": "March 2024 - August 2024",
+        "proyecto_desc_lucas": "Development of a portfolio from scratch for Lucas Aguilera, an artist specializing in hand-painted canvases and murals. The portfolio aims to attract clients by showcasing his works in an accessible manner, featuring a modern and responsive interface. Each piece includes high-quality images, brief descriptions, and links to his social media, serving as a showcase of his talent and a tool for connections in the art world.",
+        "proyecto_titulo_ofcourse": "Of Course: Fitness Classes",
+        "proyecto_fecha_ofcourse": "August 2024 - September 2024",
+        "proyecto_desc_ofcourse": "This project involved the design and development of a landing page to promote fitness classes aimed at attracting new clients. From conceptualization to final layout, a modern visual aesthetic focused on motivation and wellness was created. The page is fully responsive, ensuring an optimal experience on mobile devices, and includes key sections such as benefits, schedules, and contact information, facilitating user decision-making.",
         "ver_repo": "View repository",
         "ver_sitio": "Website"
     },
