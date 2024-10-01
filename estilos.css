@@ -88,12 +88,12 @@ h3{
     height: 60px;
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
-    animation: enganchar__nav linear both;
+    animation: enganchar_nav linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 200px;
+    animation-range: 0 100px;
 }
 
 ul {
@@ -108,7 +108,7 @@ ul {
 
 .header__links {
     cursor: pointer;
-    font-size: 20px;
+    font-size: clamp(.8rem, 1vw + .8rem, 1rem);
     font-weight: bold;
     padding: 10px;
     position: relative;
@@ -237,7 +237,7 @@ li a {
 }
 
 .inicio p{
-    font-size: 26px;
+    font-size: clamp(.8rem, 1vw + .8rem, 2rem);
     margin: 0;
     padding-top: 100px;
 }
@@ -250,7 +250,7 @@ li a {
 .inicio h3{
     background-color: #b9b9b9c0;
     text-shadow: 1px 1px 7.5px rgba(241, 241, 241, 0.9);
-    font-size: 160px;
+    font-size: clamp(2rem, 4vw + 2rem, 12rem);
     background-clip: text;
     color: transparent;
     margin: 0;
@@ -911,10 +911,6 @@ footer{
 }
 
 @media (max-width:1400px){
-    .inicio h3{
-        font-size: 116px;
-    }
-    
     .inicio__braian{
         right: 3%;
     }
@@ -923,9 +919,6 @@ footer{
         left: 6%;
     }
 
-    .header__links{
-        font-size: 20px;
-    }
 }
 
 @media (max-width:1250px){
@@ -956,9 +949,6 @@ footer{
         top:35%;
     }
 
-    .header__links{
-        font-size: .9rem;
-    }
 
     .proyectos__container {
         grid-template-columns: 1fr;
@@ -1036,9 +1026,6 @@ footer{
         padding-left: 15%;
     }
 
-    .header__links{
-        font-size: 2rem;
-    }
 
     .language-switch{
         position: absolute;
@@ -1312,9 +1299,7 @@ footer{
 
 @keyframes enganchar_nav{
     to{
-        background:  #edf0f773;
-        backdrop-filter: blur(5px);
-        
+        background-color:  #edf0f7;
     }
 }
 
