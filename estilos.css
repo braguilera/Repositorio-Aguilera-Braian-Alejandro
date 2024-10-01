@@ -256,7 +256,7 @@ li a {
     margin: 0;
     font-family: "Oswald", sans-serif;
     letter-spacing: 4px;
-    background-image: linear-gradient(45deg, #233D56, #F2D6AD); /* Degradado sutil */
+    background-image: linear-gradient(45deg, #233D56, #F2D6AD);
 }
 
 .inicio__cv{
