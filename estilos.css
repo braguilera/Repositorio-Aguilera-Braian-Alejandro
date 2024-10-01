@@ -969,13 +969,17 @@ footer{
         padding: 0 20px 40px 20px;
     }
 
+    .conocimientos__skill img{
+        width: 3rem;
+    }
+
     .conocimientos__card{
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .conocimientos__grid {
         grid-template-columns: 80%;
-        grid-auto-rows: 300px;
+        grid-auto-rows: 1fr;
     }
 
 }
@@ -983,6 +987,10 @@ footer{
 @media (max-width: 900px){
     .titulo__circle{
         top:30%;
+    }
+
+    .conocimientos__card{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
 
@@ -1073,13 +1081,9 @@ footer{
         right: 5%;
     }
 
-
-
     .conocimientos__card {
         padding: 10% 5px 30px;
     }
-
-
 
     .contacto__container {
         grid-template-columns: 1fr;
@@ -1128,6 +1132,9 @@ footer{
         height: 30px;
     }
 
+    .conocimientos__card{
+        padding: 15% 10px 50px;
+    }
 
     .sobremi__parrafo {
         font-size: 14px;
@@ -1158,11 +1165,20 @@ footer{
         top:30%;
     }
 
+    .conocimientos__card{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .conocimientos__grid {
+        grid-template-columns: 100%;
+        grid-auto-rows: 1fr;
+    }
 
     .form{
         padding: 3.5em 1em;
     }
 }
+
 
 @media (max-width:350px){
 
@@ -1172,6 +1188,17 @@ footer{
         top:35%;
     }
 
+    .conocimientos__card{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+
+    .conocimientos__skill img {
+        width: 2rem;
+    }
+
+    .conocimientos__skill h3{
+        font-size: .8rem;
+    }
 
 }
 
