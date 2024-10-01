@@ -33,7 +33,7 @@ p{
 
 h1 {
     position: relative;
-    font-size: 5rem;
+    font-size: clamp(2rem, 4vw + 2rem ,5rem);
     display: inline-block;
     margin: 50px;
     line-height: 1.2;
@@ -928,8 +928,33 @@ footer{
     }
 }
 
+@media (max-width:1250px){
+    .proyectos__container h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .conocimientos__card{
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+
+    }
+    
+    .conocimientos__skill img{
+        width: 2rem;
+    }
+}
+
 /* Tablets (Pantallas medianas) */
 @media (max-width: 1150px) {
+
+    .titulo__circle{
+        width: 120px;
+        height: 120px;
+        top:35%;
+    }
 
     .header__links{
         font-size: .9rem;
@@ -940,47 +965,27 @@ footer{
         padding: 50px 20px;
     }
 
-    .proyectos__card {
-        width: 90%;
-        height: auto;
-    }
-
     .proyectos__contenido {
         padding: 0 20px 40px 20px;
-        transform: translateY(50px);
+    }
+
+    .conocimientos__card{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .conocimientos__grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-auto-rows: 250px;
+        grid-template-columns: 80%;
+        grid-auto-rows: 300px;
     }
 
-    .sobremi__grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 200px);
-    }
-
-    .sobremi__foto {
-        grid-column: span 2 / span 2;
-        grid-row: 1;
-    }
-
-    .sobremi__parrafo {
-        grid-column: span 2 / span 2;
-        grid-row: 2;
-        font-size: 18px;
-    }
-
-    .sobremi__servicio1,
-    .sobremi__servicio2,
-    .sobremi__servicio3,
-    .sobremi__servicio4 {
-        grid-column: span 1 / span 1;
-        grid-row: auto;
-    }
 }
 
 @media (max-width: 900px){
+    .titulo__circle{
+        top:30%;
+    }
+
+
     .abrir__menu,.cerrar__menu{
         display: block;
         position: absolute;
@@ -1044,6 +1049,14 @@ footer{
 
 /* Smartphones (Pantallas pequeñas) */
 @media (max-width: 768px) {
+
+    .titulo__circle{
+        width: 110px;
+        height: 110px;
+        top:30%;
+    }
+
+
     .proyectos__card {
         width: 100%;
         height: auto;
@@ -1051,7 +1064,6 @@ footer{
 
     .proyectos__contenido {
         padding: 0 10px 20px 10px;
-        transform: translateY(30px);
     }
 
     .botones__skills {
@@ -1061,38 +1073,13 @@ footer{
         right: 5%;
     }
 
-    .conocimientos__grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-auto-rows: 200px;
-    }
+
 
     .conocimientos__card {
         padding: 10% 5px 30px;
     }
 
-    .sobremi__grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 200px);
-    }
 
-    .sobremi__foto {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .sobremi__parrafo {
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 16px;
-    }
-
-    .sobremi__servicio1,
-    .sobremi__servicio2,
-    .sobremi__servicio3,
-    .sobremi__servicio4 {
-        grid-column: 1;
-        grid-row: auto;
-    }
 
     .contacto__container {
         grid-template-columns: 1fr;
@@ -1103,6 +1090,21 @@ footer{
     .contacto__info {
         font-size: 24px;
         padding: 2rem;
+    }
+}
+
+@media (max-width: 530px){
+
+    .titulo__circle{
+        width: 110px;
+        height: 110px;
+        top:30%;
+    }
+
+    
+    .conocimientos__grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
     }
 }
 
@@ -1126,14 +1128,6 @@ footer{
         height: 30px;
     }
 
-    .conocimientos__grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-auto-rows: 150px;
-    }
-
-    .conocimientos__card {
-        padding: 5% 5px 20px;
-    }
 
     .sobremi__parrafo {
         font-size: 14px;
@@ -1157,9 +1151,28 @@ footer{
 }
 
 @media (max-width:450px){
+
+    .titulo__circle{
+        width: 100px;
+        height: 100px;
+        top:30%;
+    }
+
+
     .form{
         padding: 3.5em 1em;
     }
+}
+
+@media (max-width:350px){
+
+    .titulo__circle{
+        width: 80px;
+        height: 80px;
+        top:35%;
+    }
+
+
 }
 
 /* Animaciones y decoracion */
