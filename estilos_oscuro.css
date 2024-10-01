@@ -5,6 +5,12 @@
     color: #F5F4F4;
 }
 
+.dark-mode .header__nav {
+    animation: enganchar_nav_dark linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+}
+
 .dark-mode .proyectos{
     background-color: #383838;
 }
@@ -58,4 +64,10 @@
     background-color: #b9b9b9c0;
     text-shadow: 1px 1px 7.5px rgb(145 145 145 / 80%);
     background-image: linear-gradient(45deg, #505860, #5b554c);
+}
+
+@keyframes enganchar_nav_dark {
+    to {
+        background-color: #232323;
+    }
 }
