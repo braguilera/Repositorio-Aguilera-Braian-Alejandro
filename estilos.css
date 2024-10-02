@@ -951,7 +951,6 @@ footer{
         top:35%;
     }
 
-
     .proyectos__container {
         grid-template-columns: 1fr;
         padding: 50px 20px;
@@ -979,6 +978,10 @@ footer{
 @media (max-width: 900px){
     .titulo__circle{
         top:30%;
+    }
+
+    .inicio__braian{
+        height: 300px;
     }
 
     .conocimientos__card{
@@ -1013,12 +1016,13 @@ footer{
         height: 100vmax;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         transition: opacity 0.3s ease, visibility 0.3s ease;
+        animation: none;
     }
 
     #nav.visible{
         opacity: 1;
         visibility: visible;
-        z-index: 4;
+        z-index: 14;
     }
 
     .header__nav ul{
@@ -1026,19 +1030,19 @@ footer{
         gap: 80px;
         width: 100%;
         padding-left: 15%;
+        position: absolute;
+        top: 20%;
     }
-
 
     .language-switch{
         position: absolute;
-        bottom: 5%;
+        top: 10%;
         left: 15%;
-        
     }
 
     .switch-container{
         position: absolute;
-        bottom: 5%;
+        top: 10%;
         right: 15%;
         margin: 0;
     }
@@ -1046,6 +1050,10 @@ footer{
 
 /* Smartphones (Pantallas pequeñas) */
 @media (max-width: 768px) {
+
+    .inicio__contacto__container{
+        bottom: 15%;
+    }
 
     .titulo__circle{
         width: 110px;
@@ -1169,6 +1177,15 @@ footer{
         width: 100px;
         height: 100px;
         top:30%;
+    }
+
+    .header__nav ul{
+        top: 30%;
+    }
+
+    .switch-container{
+        top: 20%;
+        left: -15%;
     }
 
     .conocimientos__card{
