@@ -33,7 +33,7 @@ p{
 
 h1 {
     position: relative;
-    font-size: clamp(2rem, 4vw + 2rem ,5rem);
+    font-size: clamp(1.5rem, 4vw + 1.5rem ,5rem);
     display: inline-block;
     margin: 50px;
     line-height: 1.2;
@@ -234,6 +234,9 @@ li a {
     width: 100vw;
     height: 75vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inicio p{
@@ -267,13 +270,12 @@ li a {
     padding: 8px 16px;
     border-radius: 16px;
     color: #fff;
-    scale: 1;
+    margin-top: 8px;
     transition: background-color 0.3s ease;
 }
 
 .inicio__cv:hover{
     background-color: #9050DD;
-    scale: 2;
 }
 
 .inicio__braian{
@@ -998,7 +1000,7 @@ footer{
     .header__nav{
         opacity: 0;
         visibility: hidden;
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1051,6 +1053,14 @@ footer{
         top:30%;
     }
 
+    .titulo__fill{
+        left: 20%;
+    }
+    
+    .titulo__border{
+        left: 20%;
+    }
+
 
     .proyectos__card {
         width: 100%;
@@ -1101,6 +1111,15 @@ footer{
 
 /* Pantallas muy pequeñas (Smartphones compactos) */
 @media (max-width: 480px) {
+
+    .titulo__fill{
+        left: 5%;
+    }
+    
+    .titulo__border{
+        left: 5%;
+    }
+
     .proyectos__container {
         padding: 20px 10px;
     }
@@ -1170,9 +1189,9 @@ footer{
 @media (max-width:350px){
 
     .titulo__circle{
-        width: 80px;
-        height: 80px;
-        top:35%;
+        width: 50px;
+        height: 50px;
+        top:30%;
     }
 
     .conocimientos__card{
