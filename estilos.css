@@ -986,11 +986,11 @@ footer{
 @media (max-width: 900px){
 
     .triangulo__moviendo{
-        width: 150px;
+        width: 0px;
     }
 
     .conocimientos .triangulo__moviendo{
-        width: 150px;
+        width: 0px;
     }
 
     .titulo__circle{
@@ -1137,14 +1137,6 @@ footer{
 /* Pantallas muy pequeñas (Smartphones compactos) */
 @media (max-width: 480px) {
 
-    .triangulo__moviendo{
-        width: 80px;
-    }
-
-    .conocimientos .triangulo__moviendo{
-        width: 80px;
-    }
-
     .titulo__fill{
         left: 5%;
     }
@@ -1229,14 +1221,6 @@ footer{
 
 
 @media (max-width:350px){
-
-    .triangulo__moviendo{
-        width: 50px;
-    }
-
-    .conocimientos .triangulo__moviendo{
-        width: 50px;
-    }
 
     .titulo__circle{
         width: 50px;
