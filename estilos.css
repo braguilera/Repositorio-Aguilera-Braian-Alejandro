@@ -986,11 +986,11 @@ footer{
 @media (max-width: 900px){
 
     .triangulo__moviendo{
-        width: 0px;
+        display: none;
     }
 
     .conocimientos .triangulo__moviendo{
-        width: 0px;
+        display: none;
     }
 
     .titulo__circle{
