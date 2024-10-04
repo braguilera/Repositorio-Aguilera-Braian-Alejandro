@@ -1005,7 +1005,6 @@ footer{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
-
     .abrir__menu,.cerrar__menu{
         display: block;
         position: absolute;
@@ -1063,6 +1062,39 @@ footer{
         right: 15%;
         margin: 0;
     }
+
+    .proyectos__card{
+        width: 400px;
+        height: 600px;
+        
+    }
+
+    .proyectos__contenido{
+        height: 65%;
+        transform:translateY(0);
+    }
+
+    .proyectos__container h2{
+        font-size: 2rem;
+    }
+
+    .card__fecha{
+        position:initial;
+    }
+
+    .card__skills{
+        justify-content: center;
+        margin: 18px 0;
+    }
+
+    .botones__skills {
+        width: auto;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        align-items: center;
+    }
+
 }
 
 /* Smartphones (Pantallas pequeñas) */
