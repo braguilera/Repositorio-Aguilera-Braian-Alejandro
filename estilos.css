@@ -380,7 +380,7 @@ li a {
     position: absolute;
     background-color: #f5f4f4;
     bottom: 0;
-    border-top-left-radius: 60px;
+    border-top-left-radius: 32px;
     padding: 0 30px 60px 30px;
     transform: translateY(100px);
     transition-duration: .3s;
@@ -586,6 +586,10 @@ li a {
     height: 100%;
     overflow: hidden;
     padding: 10px;
+}
+
+.sobremi h2{
+    border-bottom: 1px solid #232323;
 }
         
 .sobremi__foto{
