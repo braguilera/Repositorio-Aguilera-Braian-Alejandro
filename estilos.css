@@ -327,6 +327,8 @@ li a {
     border-radius: 16px;
     position: relative;
     z-index: 0;
+    padding: 0 20px;
+
 }
 
 .proyectos .titulo__circle{
@@ -345,7 +347,8 @@ li a {
 
 .proyectos__card{
     position: relative;
-    width: 800px;
+    width: 100%;
+    max-width: 800px; 
     margin: 0 auto;
     height: 400px;
     background-color: rgb(189, 189, 189);
@@ -381,7 +384,7 @@ li a {
     background-color: #f5f4f4;
     bottom: 0;
     border-top-left-radius: 32px;
-    padding: 0 30px 60px 30px;
+    padding: 20px 30px 40px 30px;
     transform: translateY(100px);
     transition-duration: .3s;
     overflow: hidden;
@@ -573,7 +576,7 @@ li a {
     grid-template-rows: repeat(3, 200px);
     gap: 8px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px;
 }
 
 .sobremi .titulo__circle{
@@ -628,13 +631,13 @@ li a {
 .sobremi__servicio1{
     grid-column-start: 2;
     grid-row-start: 2;
-
+    margin-top: 10px;
 }
 
 .sobremi__servicio2{
     grid-column-start: 3;
     grid-row-start: 2;
-
+    margin-top: 10px;
 }
 
 .sobremi__servicio3{
@@ -1091,6 +1094,15 @@ footer{
         font-size: 2rem;
     }
 
+    .sobremi__foto{
+        display: none;
+    }
+
+    .sobremi__grid{
+        grid-template-columns: 0px 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+
     .card__fecha{
         position:initial;
     }
@@ -1131,12 +1143,6 @@ footer{
         left: 20%;
     }
 
-
-    .proyectos__card {
-        width: 100%;
-        height: auto;
-    }
-
     .proyectos__contenido {
         padding: 0 10px 20px 10px;
     }
@@ -1164,6 +1170,29 @@ footer{
     }
 }
 
+@media (max-width: 650px) {
+    .sobremi__grid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 20px;
+    }
+
+    .sobremi__foto {
+        display: none;
+    }
+
+    .sobremi__parrafo {
+        grid-column: 1 / -1;
+        grid-row-start: 1;
+        text-align: center;
+    }
+
+    .sobremi__servicio1, .sobremi__servicio2, .sobremi__servicio3, .sobremi__servicio4 {
+        grid-column: 1 / -1; 
+        grid-row: auto;
+        margin-top: 20px;
+    }
+}
 @media (max-width: 530px){
 
     .titulo__circle{
@@ -1179,7 +1208,6 @@ footer{
     }
 }
 
-/* Pantallas muy pequeñas (Smartphones compactos) */
 @media (max-width: 480px) {
 
     .titulo__fill{
@@ -1192,11 +1220,6 @@ footer{
 
     .proyectos__container {
         padding: 20px 10px;
-    }
-
-    .proyectos__card {
-        width: 100%;
-        height: auto;
     }
 
     .proyectos__contenido {
