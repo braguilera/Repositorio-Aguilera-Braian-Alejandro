@@ -588,6 +588,14 @@ li a {
     padding: 10px;
 }
 
+.inner-card h3{
+    margin: 0;
+}
+
+.inner-card img{
+    
+}
+
 .sobremi h2{
     border-bottom: 1px solid #232323;
 }
@@ -612,7 +620,7 @@ li a {
     font-size: 20px;
 }
 
-.sobremi__parrafo h2{
+.sobremi h2{
     text-align: center;
 }
 
