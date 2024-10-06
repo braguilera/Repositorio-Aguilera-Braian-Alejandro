@@ -461,13 +461,12 @@ li a {
 
 .conocimientos__grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 300px;
-    gap: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta las columnas dinámicamente */
+    gap: 20px;
+    width: 100%; /* Asegura que no se desborde horizontalmente */
+    max-width: 100%; /* Limita el tamaño máximo al 100% del contenedor */
     justify-content: center;
 }
-
-
 
 .conocimientos__card{
     display: grid;
@@ -537,6 +536,7 @@ li a {
 
 .conocimientos__skill img{
     width: 3rem;
+    display: block;
 }
 
 .conocimientos .title-container{
@@ -659,6 +659,7 @@ li a {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    display: block;
 }
 
 .ola{
