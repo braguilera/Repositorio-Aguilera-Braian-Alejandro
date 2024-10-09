@@ -1081,13 +1081,12 @@ footer{
     }
 
     .proyectos__card{
-        width: 400px;
+        width: 80%;
         height: 600px;
-        
     }
 
     .proyectos__contenido{
-        height: 65%;
+        height: auto;
         transform:translateY(0);
     }
 
@@ -1144,17 +1143,6 @@ footer{
         left: 20%;
     }
 
-    .proyectos__contenido {
-        padding: 0 10px 20px 10px;
-    }
-
-    .botones__skills {
-        width: 50%;
-        height: 40px;
-        bottom: 10%;
-        right: 5%;
-    }
-
     .conocimientos__card {
         padding: 10% 5px 30px;
     }
@@ -1202,6 +1190,13 @@ footer{
         top:30%;
     }
 
+    .proyectos__card{
+        width: 90%;
+    }
+
+    .proyectos__container h2{
+        font-size: 1rem;
+    }
     
     .conocimientos__grid {
         grid-template-columns: 1fr;
@@ -1219,12 +1214,12 @@ footer{
         left: 5%;
     }
 
-    .proyectos__container {
-        padding: 20px 10px;
+    .proyectos__card{
+        width: 100%;
     }
-
-    .proyectos__contenido {
-        padding: 0 10px 10px 10px;
+    
+    .proyectos__contenido p{
+        font-size: 14px;
     }
 
     .card__skills img {
@@ -1243,12 +1238,6 @@ footer{
     .contacto__info {
         font-size: 20px;
         padding: 1.5rem;
-    }
-
-    .botones__skills {
-        width: 70%;
-        height: 30px;
-        bottom: 5%;
     }
 
     .contacto__botones {
@@ -1272,6 +1261,14 @@ footer{
     .switch-container{
         top: 20%;
         left: -15%;
+    }
+
+    .proyectos__card{
+        height: 700px;
+    }
+
+    .proyectos__contenido{
+        height: 500px;
     }
 
     .conocimientos__card{
