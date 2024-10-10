@@ -350,16 +350,25 @@ li a {
     max-width: 800px; 
     margin: 0 auto;
     height: 400px;
+    transform: translateX(-100%);
     background-color: rgb(189, 189, 189);
     box-shadow: 0 20px 24px #2323237a;
     border-radius: 16px;
     backdrop-filter: blur(16px);
     overflow: hidden;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.proyectos__card.in-view {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .proyectos__container h2{
     margin: 0;
 }
+
 
 .card__fecha{
     margin: 0;
@@ -1430,10 +1439,14 @@ footer{
 /* Animaciones */
 
 @keyframes fadeInOut {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% { 
+        opacity: 0;
+        transform: translateX(-100%); 
+    }
+    100% { 
+        opacity: 1;
+        transform: translateX(0); 
+    }
 }
 
 @keyframes oleaje{
