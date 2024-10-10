@@ -5,6 +5,7 @@
     color: #F5F4F4;
 }
 
+
 .dark-mode .header__nav {
     animation: enganchar_nav_dark linear both;
     animation-timeline: scroll(root);
