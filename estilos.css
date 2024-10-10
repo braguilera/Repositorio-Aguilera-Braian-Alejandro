@@ -1035,7 +1035,7 @@ footer{
     .abrir__menu,.cerrar__menu{
         display: block;
         position: absolute;
-        right: 5%;
+        right: 6%;
         top: 2.5%;
         cursor: pointer;
         z-index: 3;
@@ -1085,9 +1085,16 @@ footer{
 
     .switch-container{
         position: absolute;
-        top: 10%;
-        right: 15%;
+        top: 3.2%;
         margin: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .theme-switch{
+        position: absolute;
+        top: 0;
+        left: 12%;
     }
 
     .proyectos__card{
@@ -1277,14 +1284,7 @@ footer{
         left: 15%;
     }
 
-    .header__nav ul{
-        top: 30%;
-    }
 
-    .switch-container{
-        top: 20%;
-        left: -15%;
-    }
 
     .proyectos__card{
         height: 700px;
