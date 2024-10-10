@@ -350,7 +350,7 @@ li a {
     max-width: 800px; 
     margin: 0 auto;
     height: 400px;
-    transform: translateX(-100%);
+    transform: translateX(-70%);
     background-color: rgb(189, 189, 189);
     box-shadow: 0 20px 24px #2323237a;
     border-radius: 16px;
