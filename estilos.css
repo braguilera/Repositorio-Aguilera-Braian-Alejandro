@@ -241,6 +241,7 @@ li a {
     font-size: clamp(.8rem, 1vw + .8rem, 2rem);
     margin: 0;
     padding-top: 100px;
+    width: 80%;
 }
 
 .inicio strong{
@@ -257,7 +258,7 @@ li a {
     margin: 0;
     font-family: "Oswald", sans-serif;
     letter-spacing: 4px;
-    background-image: linear-gradient(45deg, #233D56, #F2D6AD);
+    background-image: linear-gradient(45deg, #6a6a6b, #a9a39b);
 }
 
 .inicio__cv{
@@ -921,7 +922,7 @@ footer{
 
 @media (max-width:1700px){
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .inicio__braian{
@@ -996,6 +997,15 @@ footer{
     .conocimientos__grid {
         grid-template-columns: 80%;
         grid-auto-rows: 1fr;
+    }
+
+    .sobremi__foto{
+        display: none;
+    }
+
+    .sobremi__grid{
+        grid-template-columns: 0px 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
     }
 
 }
@@ -1094,15 +1104,6 @@ footer{
         font-size: 1.5rem;
     }
 
-    .sobremi__foto{
-        display: none;
-    }
-
-    .sobremi__grid{
-        grid-template-columns: 0px 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
-    }
-
     .card__fecha{
         position:initial;
     }
@@ -1146,11 +1147,11 @@ footer{
     }
 
     .titulo__fill{
-        left: 20%;
+        left: 25%;
     }
     
     .titulo__border{
-        left: 20%;
+        left: 25%;
     }
 
     .conocimientos__card {
@@ -1191,6 +1192,14 @@ footer{
         grid-row: auto;
         margin-top: 20px;
     }
+
+    .contacto__mail a{
+        font-size: 1.3rem;
+    }
+
+    .contacto__botones{
+        font-size: 1.3rem;
+    }
 }
 @media (max-width: 530px){
 
@@ -1217,11 +1226,11 @@ footer{
 @media (max-width: 480px) {
 
     .titulo__fill{
-        left: 5%;
+        left: 20%;
     }
     
     .titulo__border{
-        left: 5%;
+        left: 20%;
     }
 
     .proyectos__card{
@@ -1250,10 +1259,6 @@ footer{
         padding: 1.5rem;
     }
 
-    .contacto__botones {
-        font-size: .5em;
-        height: 1.5rem;
-    }
 }
 
 @media (max-width:450px){
@@ -1262,6 +1267,14 @@ footer{
         width: 100px;
         height: 100px;
         top:30%;
+    }
+
+    .titulo__fill{
+        left: 15%;
+    }
+    
+    .titulo__border{
+        left: 15%;
     }
 
     .header__nav ul{
@@ -1301,7 +1314,15 @@ footer{
     .titulo__circle{
         width: 50px;
         height: 50px;
-        top:30%;
+        top:42%;
+    }
+
+    .titulo__fill{
+        left: 10%;
+    }
+    
+    .titulo__border{
+        left: 10%;
     }
 
     .conocimientos__card{
