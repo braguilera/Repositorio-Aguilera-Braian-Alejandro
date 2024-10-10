@@ -24,6 +24,12 @@
     background-color: #383838;
 }
 
+.dark-mode .conocimientos__card h2{
+    border-bottom: 1px solid #F5F4F4;
+}
+
+
+
 .dark-mode .sobremi h2{
     border-bottom: 1px solid #F5F4F4;
 }
@@ -33,16 +39,16 @@
 }
 
 .dark-mode .contacto__info{
-    background-color: #383838;
+    background-color: #050505;
 }
 
 .dark-mode .form{
-    background-color: #383838;
+    background-color: #050505;
 }
 
 .dark-mode .form__input{
     background-color: #232323;
-    border: 1px solid #1b1a1a;
+    border: 1px solid #6b6b6b;
 }
 
 .dark-mode .form__input:focus{
@@ -57,7 +63,7 @@
 }
 
 .dark-mode .tooltip-container button{
-    background-color: #383838;
+    background-color: #050505;
 }
 
 .dark-mode .tooltip-container button:hover {

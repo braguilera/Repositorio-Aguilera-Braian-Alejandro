@@ -2,8 +2,6 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color:#EDF0F7 ;
-    color: 39393a;
-    width: 100vw;
     overflow-x: hidden;
     color: #232323;
 }
@@ -360,7 +358,6 @@ li a {
 
 .proyectos__container h2{
     margin: 0;
-    margin-top: 10px;
 }
 
 .card__fecha{
@@ -379,7 +376,6 @@ li a {
 }
 
 .proyectos__contenido{
-    height: 200px;
     position: absolute;
     background-color: #f5f4f4;
     bottom: 0;
@@ -393,6 +389,10 @@ li a {
 
 .proyectos__contenido:hover{
     transform: translateY(0);
+}
+
+.proyectos__contenido p{
+    font-size: 16px;
 }
 
 .card__skills{
@@ -461,10 +461,10 @@ li a {
 
 .conocimientos__grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta las columnas dinámicamente */
-    gap: 20px;
-    width: 100%; /* Asegura que no se desborde horizontalmente */
-    max-width: 100%; /* Limita el tamaño máximo al 100% del contenedor */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+    max-width: 100%;
     justify-content: center;
 }
 
@@ -733,7 +733,7 @@ footer{
     font-size: 32px;
     background-color: #fff;
     border-radius: 1em 0 0 1em;
-    padding: 3rem;
+    padding: 3.5em 1.5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30% 50px;
@@ -1118,6 +1118,16 @@ footer{
         bottom: auto;
         right: auto;
         align-items: center;
+    }
+
+    .contacto__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contacto__mail{
+        width: 100%;
     }
 
 }
