@@ -1193,6 +1193,10 @@ footer{
         top: 24%;
         font-size: 1rem;
     }
+
+    .tooltip-text{
+        display: none;
+    }
 }
 
 @media (max-width: 650px) {
