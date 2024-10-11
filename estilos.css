@@ -1186,6 +1186,13 @@ footer{
         font-size: 24px;
         padding: 2rem;
     }
+
+    .alert-message{
+        bottom: auto;
+        right: 6%;
+        top: 24%;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 650px) {
