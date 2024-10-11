@@ -1173,7 +1173,7 @@ footer{
     }
 
     .conocimientos__card {
-        padding: 10% 5px 30px;
+        padding: 15% 5px 30px;
     }
 
     .contacto__container {
@@ -1189,6 +1189,15 @@ footer{
 }
 
 @media (max-width: 650px) {
+
+    .conocimientos .titulo__border{
+        left: 20%;
+    }
+
+    .conocimientos .titulo__fill{
+        left: 20%;
+    }
+
     .sobremi__grid {
         grid-template-columns: 1fr; 
         grid-template-rows: auto; 
@@ -1226,6 +1235,8 @@ footer{
         height: 110px;
         top:30%;
     }
+
+
 
     .proyectos__card{
         width: 90%;
@@ -1268,6 +1279,14 @@ footer{
         padding: 15% 10px 50px;
     }
 
+    .conocimientos .titulo__border{
+        left: 15%;
+    }
+
+    .conocimientos .titulo__fill{
+        left: 15%;
+    }
+
     .sobremi__parrafo {
         font-size: 14px;
     }
@@ -1305,11 +1324,27 @@ footer{
 
     .conocimientos__card{
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        padding: 20% 5px 30px;
     }
 
     .conocimientos__grid {
         grid-template-columns: 100%;
         grid-auto-rows: 1fr;
+    }
+
+    .conocimientos__card h2{
+        font-size: 1.6rem;
+        top:-2%
+    }
+
+    .conocimientos .titulo__border{
+        left: 7%;
+        font-size: 2.3rem;
+    }
+
+    .conocimientos .titulo__fill{
+        left: 7%;
+        font-size: 2.3rem;
     }
 
     .form{
@@ -1342,7 +1377,17 @@ footer{
     }
 
     .conocimientos__skill h3{
-        font-size: .8rem;
+        font-size: .6rem;
+    }
+
+    .conocimientos .titulo__border{
+        left: 2%;
+        font-size: 2.3rem;
+    }
+
+    .conocimientos .titulo__fill{
+        left: 2%;
+        font-size: 2.3rem;
     }
 
 }
@@ -1350,6 +1395,7 @@ footer{
 
     .inicio__braian{
         height: 260px;
+        filter: drop-shadow(0 1px 10px #23232380);
     }
 
 }
@@ -1357,7 +1403,7 @@ footer{
 @media (max-height: 570px){
 
     .inicio__braian{
-        display: none;
+        height: 150px;
     }
 
     .inicio__contacto__container{
