@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
                 entry.target.classList.add('in-view');
-                observer.unobserve(entry.target);  // Deja de observar el elemento una vez que se realiza la transición
+                observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: [0.1]  // Activa cuando el 50% de la tarjeta esté en el viewport
+        threshold: [0.1]
     });
     
     cards.forEach(card => {

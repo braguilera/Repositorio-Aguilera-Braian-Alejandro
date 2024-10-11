@@ -379,10 +379,20 @@ li a {
 }
 
 .proyectos__portada{
-    margin: 0 auto;
     border-radius: 12px;
     width: 100%;
-    object-fit: cover;
+    height: 110%;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.proyecto__lucas{
+    background-image: url("./img/projectos/Lucas_Aguilera/Portada_proyecto_Lucas.png");
+}
+
+.proyectos__of_course{
+    background-image: url("./img/projectos/Of_Course/Portada_Of_Course.png");
 }
 
 .proyectos__contenido{
@@ -1106,6 +1116,10 @@ footer{
         left: 12%;
     }
 
+    .proyectos__portada{
+        height: 60%;
+    }
+
     .proyectos__card{
         width: 80%;
         height: 600px;
@@ -1200,6 +1214,14 @@ footer{
 }
 
 @media (max-width: 650px) {
+
+    .proyecto__lucas{
+        background-image: url("./img/projectos/Lucas_Aguilera/Portada_proyecto_Lucas__mobile.png");
+    }
+
+    .proyectos__of_course{
+        background-image: url("./img/projectos/Of_Course/Portada_Of_Course.png");
+    }
 
     .conocimientos .titulo__border{
         left: 20%;
