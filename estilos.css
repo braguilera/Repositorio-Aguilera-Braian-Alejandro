@@ -1451,6 +1451,10 @@ footer{
         padding: 0;
     }
 
+    .proyectos__contenido {
+        width: 90%;
+    }
+
 }
 
 /* Animaciones y decoracion */
