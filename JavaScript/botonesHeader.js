@@ -1,7 +1,6 @@
 //Funcionalidad para modo claro y oscuro
 const btnTheme = document.querySelector('#theme-btn');
 
-// Al cargar la página, verificamos si hay un modo guardado en el localStorage
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
@@ -11,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const savedLanguage = localStorage.getItem('language');
     if (savedLanguage) {
-        changeLanguage(savedLanguage); // Si hay un idioma guardado, lo aplicamos
+        changeLanguage(savedLanguage);
     }
 });
 
@@ -37,7 +36,7 @@ const en = document.querySelector('#boton_en');
 langButtons.forEach((button) => {
     button.addEventListener("click", () => {
         const selectedLanguage = button.dataset.language;
-        changeLanguage(selectedLanguage); // Cambiamos el idioma
+        changeLanguage(selectedLanguage);
     });
 });
 
@@ -52,7 +51,6 @@ function changeLanguage(language) {
             });
         });
 
-    // Actualizamos la interfaz para reflejar el idioma seleccionado
     if (language === 'es') {
         es.classList.add("language__active");
         en.classList.remove("language__active");
