@@ -1110,17 +1110,19 @@ footer{
 
     .theme-switch{
         position: fixed ;
-        top: 4%;
+        top: 3%;
         left: 6%;
     }
 
-    .theme-switch::before{
-        content: "";
-        position: absolute;
-        left: -40%;
-        width: 120vw;
-        height: 300%;
-        background-color: #EDF0F7;
+    .switch-container{
+        position: fixed;
+        left: 0;
+        background-color: transparent;
+        width: 100vw;
+        height: 80px;
+        animation: enganchar_nav linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 100px;
     }
 
     .proyectos__portada{
@@ -1171,7 +1173,6 @@ footer{
 
 }
 
-/* Smartphones (Pantallas pequeñas) */
 @media (max-width: 768px) {
 
     .inicio__contacto__container{
@@ -1220,7 +1221,6 @@ footer{
 }
 
 @media (max-width: 650px) {
-
     .proyecto__lucas{
         background-image: url("./img/projectos/Lucas_Aguilera/Portada_proyecto_Lucas__mobile.png");
     }
@@ -1268,14 +1268,11 @@ footer{
     }
 }
 @media (max-width: 530px){
-
     .titulo__circle{
         width: 110px;
         height: 110px;
         top:30%;
     }
-
-
 
     .proyectos__card{
         width: 90%;
@@ -1292,7 +1289,6 @@ footer{
 }
 
 @media (max-width: 480px) {
-
     .titulo__fill{
         left: 20%;
     }
@@ -1338,7 +1334,6 @@ footer{
 }
 
 @media (max-width:450px){
-
     .titulo__circle{
         width: 100px;
         height: 100px;
@@ -1392,7 +1387,6 @@ footer{
 }
 
 @media (max-width:350px){
-
     .titulo__circle{
         width: 50px;
         height: 50px;
@@ -1430,17 +1424,15 @@ footer{
     }
 
 }
-@media (max-height: 844px){
 
+@media (max-height: 844px){
     .inicio__braian{
         height: 260px;
         filter: drop-shadow(0 1px 10px #23232380);
     }
-
 }
 
 @media (max-height: 570px){
-
     .inicio__braian{
         height: 150px;
     }
@@ -1459,6 +1451,10 @@ footer{
 
     .proyectos__contenido {
         width: 90%;
+    }
+
+    .switch-container{
+        height: 60px;
     }
 
 }
