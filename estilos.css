@@ -1057,14 +1057,9 @@ footer{
         right: 6%;
         top: 2.5%;
         cursor: pointer;
-        z-index: 3;
+        z-index: 13;
         border: none;
         background-color: transparent;
-    }
-
-    .abrir__menu{
-        background-color: #EDF0F7;
-        border-radius: 10%;
     }
 
     .header__nav{
@@ -1108,21 +1103,24 @@ footer{
     }
 
     .switch-container{
-        position: absolute;
-        top: 3.2%;
         margin: 0;
         width: 100%;
         z-index: 3;
     }
 
     .theme-switch{
-        position: absolute;
-        top: 0;
-        left: 12%;
+        position: fixed ;
+        top: 4%;
+        left: 6%;
     }
 
     .theme-switch::before{
         content: "";
+        position: absolute;
+        left: -40%;
+        width: 120vw;
+        height: 300%;
+        background-color: #EDF0F7;
     }
 
     .proyectos__portada{
