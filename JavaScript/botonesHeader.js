@@ -41,7 +41,6 @@ langButtons.forEach((button) => {
     });
 });
 
-// Función para cambiar el idioma y guardarlo en localStorage
 function changeLanguage(language) {
     fetch(`./JavaScript/${language}.json`)
         .then(res => res.json())
