@@ -139,7 +139,8 @@ li a {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-    position: absolute;
+    position: fixed;
+    top: -.5%;
     right: 5%;
     gap: 30px;
     align-items: center;
@@ -538,8 +539,6 @@ li a {
     margin-bottom: 4%;
 }
 
-
-
 .conocimientos__skill{
     display: flex;
     width: 100px;
@@ -564,7 +563,7 @@ li a {
 }
 
 .conocimientos .titulo__circle{
-    left: 70%;
+    left: 35%;
 }
 
 .conocimientos__ola{
