@@ -1053,13 +1053,18 @@ footer{
 
     .abrir__menu,.cerrar__menu{
         display: block;
-        position: absolute;
+        position: fixed;
         right: 6%;
         top: 2.5%;
         cursor: pointer;
         z-index: 3;
         border: none;
         background-color: transparent;
+    }
+
+    .abrir__menu{
+        background-color: #EDF0F7;
+        border-radius: 10%;
     }
 
     .header__nav{
@@ -1116,6 +1121,10 @@ footer{
         left: 12%;
     }
 
+    .theme-switch::before{
+        content: "";
+    }
+
     .proyectos__portada{
         height: 60%;
     }
@@ -1124,7 +1133,6 @@ footer{
         width: 80%;
         height: 600px;
     }
-
 
     .proyectos__contenido{
         height: auto;
