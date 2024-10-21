@@ -18,7 +18,6 @@ btnTheme.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     btnTheme.classList.toggle('active');
 
-    // Guardamos el modo en el localStorage
     if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark');
     } else {
@@ -59,6 +58,5 @@ function changeLanguage(language) {
         en.classList.add("language__active");
     }
 
-    // Guardamos el idioma en el localStorage
     localStorage.setItem('language', language);
 }
