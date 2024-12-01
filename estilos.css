@@ -583,14 +583,60 @@ li a {
     display: flex;
 }
 
+.sobremi__foto{
+    display: flex;
+    justify-content: center;
+}
+
+.sobremi__foto .inner-card{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4f4;
+    border-radius: 50% 50% 0% 100% / 50% 50% 51% 55%;
+    border: 20px solid #e6d8f7;
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, 10.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi__foto .inner-card::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 2px solid #9050dd;
+    opacity: 1;
+    border-radius: inherit;
+    top: -30px;
+    left: -32px;
+    z-index: 1;
+}
+
+.sobremi__foto img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    justify-self: center;
+    align-self: center;
+}
+
 .sobremi__grid {
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(3, 200px);
     gap: 8px;
     margin: 0 auto;
     padding: 50px;
+}
+
+.sobremi__grid div{
+    box-sizing: border-box;
 }
 
 .sobremi .titulo__circle{
@@ -617,55 +663,12 @@ li a {
 .sobremi h2{
     border-bottom: 1px solid #232323;
 }
-        
-.sobremi__foto{
-    width: 100%;
-    height: auto;
-    background-image: url(./img/Braian_sobremi.png);
-    background-size: cover;
-    background-position: top;
-    margin: 0 auto;
-    mask-image: linear-gradient(
-        #EDF0F7 80%,
-        transparent
-    );
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-.sobremi__parrafo{
-    grid-column: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    font-size: 16px;
-}
 
 .sobremi h2{
     text-align: center;
 }
 
-.sobremi__servicio1{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    margin-top: 10px;
-}
 
-.sobremi__servicio2{
-    grid-column-start: 3;
-    grid-row-start: 2;
-    margin-top: 10px;
-}
-
-.sobremi__servicio3{
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-.sobremi__servicio4{
-    grid-column-start: 3;
-    grid-row-start: 3;
-}
 
 /* Oleaje encima del footer */
 
