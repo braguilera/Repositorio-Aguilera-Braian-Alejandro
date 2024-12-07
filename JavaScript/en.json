@@ -2,6 +2,7 @@
     "header": {
         "title": "Portfolio",
         "nav_inicio": "Home",
+        "nav_experiencia": "Experiencie",
         "nav_proyecto": "Projects",
         "nav_conocimientos": "Skills",
         "nav_sobremi": "About me",
@@ -13,16 +14,20 @@
         "descargar_cv": "Download CV"
     },
 
-    "proyectos": {
-        "titulo": "Projects",
-        "proyecto_titulo_lucas": "Art Portfolio",
-        "proyecto_fecha_lucas": "March 2024 - August 2024",
-        "proyecto_desc_lucas": "Development of a portfolio from scratch for Lucas Aguilera, an artist specializing in hand-painted canvases and murals. The portfolio aims to attract clients by showcasing his works in an accessible manner, featuring a modern and responsive interface. Each piece includes high-quality images, brief descriptions, and links to his social media, serving as a showcase of his talent and a tool for connections in the art world.",
-        "proyecto_titulo_ofcourse": "Of Course: Fitness Classes",
-        "proyecto_fecha_ofcourse": "August 2024 - September 2024",
-        "proyecto_desc_ofcourse": "This project involved the design and development of a landing page to promote fitness classes aimed at attracting new clients. From conceptualization to final layout, a modern visual aesthetic focused on motivation and wellness was created. The page is fully responsive, ensuring an optimal experience on mobile devices, and includes key sections such as benefits, schedules, and contact information, facilitating user decision-making.",
+    "experiencia": {
+        "titulo": "Experiencie",
+        "exp_titulo_lucas": "Art Portfolio",
+        "exp_fecha_lucas": "March 2024 - August 2024",
+        "exp_desc_lucas": "Development of a portfolio from scratch for Lucas Aguilera, an artist specializing in hand-painted canvases and murals. The portfolio aims to attract clients by showcasing his works in an accessible manner, featuring a modern and responsive interface. Each piece includes high-quality images, brief descriptions, and links to his social media, serving as a showcase of his talent and a tool for connections in the art world.",
+        "exp_titulo_ofcourse": "Of Course: Fitness Classes",
+        "exp_fecha_ofcourse": "August 2024 - September 2024",
+        "exp_desc_ofcourse": "This project involved the design and development of a landing page to promote fitness classes aimed at attracting new clients. From conceptualization to final layout, a modern visual aesthetic focused on motivation and wellness was created. The page is fully responsive, ensuring an optimal experience on mobile devices, and includes key sections such as benefits, schedules, and contact information, facilitating user decision-making.",
         "ver_repo": "View repository",
         "ver_sitio": "Website"
+    },
+
+    "proyectos":{
+        "titulo":"Projects"
     },
 
     "conocimientos": {

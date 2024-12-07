@@ -2,6 +2,7 @@
     "header": {
         "title": "Portafolio",
         "nav_inicio": "Inicio",
+        "nav_experiencia": "Experiencia",
         "nav_proyecto": "Proyectos",
         "nav_conocimientos": "Conocimientos",
         "nav_sobremi": "Sobre mí",
@@ -13,16 +14,20 @@
         "descargar_cv": "Descargar CV"
     },
 
-    "proyectos": {
-        "titulo": "Proyectos",
-        "proyecto_titulo_lucas": "Portafolio Artístico",
-        "proyecto_fecha_lucas": "Marzo 2024 - Agosto 2024",
-        "proyecto_desc_lucas": "Desarrollo de un portafolio desde cero para Lucas Aguilera, un artista de cuadros pintados a mano y murales. El portafolio busca atraer clientes mostrando sus obras de manera accesible, con una interfaz moderna y responsiva. Cada obra incluye imágenes de alta calidad, descripciones breves y enlaces a sus redes sociales, sirviendo como un escaparate de su talento y una herramienta para conexiones en el mundo del arte.",
-        "proyecto_titulo_ofcourse": "Of Course: Clases fitness",
-        "proyecto_fecha_ofcourse": "Agosto 2024 - Septiembre 2024",
-        "proyecto_desc_ofcourse": "Este proyecto implicó el diseño y desarrollo de una landing page para promocionar clases de fitness, con el objetivo de atraer nuevos clientes. Desde la conceptualización hasta la maquetación final, se creó una estética visual moderna centrada en la motivación y el bienestar. La página es completamente responsive, asegurando una experiencia óptima en dispositivos móviles, e incluye secciones clave como beneficios, horarios y contacto, facilitando la toma de decisiones de los usuarios.",
+    "experiencia": {
+        "titulo": "Experiencia",
+        "exp_titulo_lucas": "Portafolio Artístico",
+        "exp_fecha_lucas": "Marzo 2024 - Agosto 2024",
+        "exp_desc_lucas": "Desarrollo de un portafolio desde cero para Lucas Aguilera, un artista de cuadros pintados a mano y murales. El portafolio busca atraer clientes mostrando sus obras de manera accesible, con una interfaz moderna y responsiva. Cada obra incluye imágenes de alta calidad, descripciones breves y enlaces a sus redes sociales, sirviendo como un escaparate de su talento y una herramienta para conexiones en el mundo del arte.",
+        "exp_titulo_ofcourse": "Of Course: Clases fitness",
+        "exp_fecha_ofcourse": "Agosto 2024 - Septiembre 2024",
+        "exp_desc_ofcourse": "Este proyecto implicó el diseño y desarrollo de una landing page para promocionar clases de fitness, con el objetivo de atraer nuevos clientes. Desde la conceptualización hasta la maquetación final, se creó una estética visual moderna centrada en la motivación y el bienestar. La página es completamente responsive, asegurando una experiencia óptima en dispositivos móviles, e incluye secciones clave como beneficios, horarios y contacto, facilitando la toma de decisiones de los usuarios.",
         "ver_repo": "Ver repositorio",
         "ver_sitio": "Sitio web"
+    },
+
+    "proyectos":{
+        "titulo":"Proyectos"
     },
     
     "conocimientos": {
