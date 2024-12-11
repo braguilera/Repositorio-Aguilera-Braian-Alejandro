@@ -464,11 +464,12 @@ li a {
 
 #carrusel_videos {
     margin: 0 auto;
+    margin-top: 50px;
     max-width: 1000px;
     width: 100%;
     position: relative;
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
+    border-top: 1px solid #ddc6f8;
+    border-bottom: 1px solid #ddc6f8;
     padding: 80px 6px 80px 6px;
 }
 
