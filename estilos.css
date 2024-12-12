@@ -464,11 +464,9 @@ li a {
 
 #carrusel_videos {
     margin: 0 auto;
-    margin-top: 50px;
     max-width: 1000px;
     width: 100%;
     position: relative;
-    border-top: 1px solid #ddc6f8;
     border-bottom: 1px solid #ddc6f8;
     padding: 80px 6px 80px 6px;
 }
@@ -484,7 +482,7 @@ li a {
 #carrusel_videos .carrusel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
+    grid-auto-columns: calc((100% / 2.5) - 12px);
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -538,7 +536,8 @@ li a {
 .video_card{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 350px;
+    width: 300px;
     list-style: none;
     background-color: #e6d8f7;
     border-radius: 8px; 
@@ -555,8 +554,9 @@ li a {
 }
 
 .video_thumbnail{
-    width: 100%;
+    width: 300px;
     object-fit: cover;
+    margin: 0 auto;
 }
 
 .video_thumbnail img{
@@ -584,6 +584,11 @@ li a {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.video_info section{
+    height: 100px;
+    overflow-y: scroll;
 }
 
 .video_footer{
