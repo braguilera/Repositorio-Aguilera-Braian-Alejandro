@@ -34,21 +34,22 @@
         "titulo": "Consortium Manager",
         "descripcion": "University group project focused on <strong>consortium management</strong>. I designed and developed the <strong>frontend</strong> using <strong>React</strong>, with an optimized UX design and <strong>interactive animations</strong>. I implemented the <strong>backend</strong> with <strong>Java</strong> and <strong>SQL Server</strong>, solving the challenge of <strong>cascading deletion</strong> in the database. The application includes a <strong>roles system</strong> (tenants, owners, employees) with specific access through <strong>dynamic routing</strong> and table-style data presentation using <strong>React</strong> and <strong>CSS</strong>."
     },
+    
     "portafolio_dot_dager": {
         "titulo": "Dot Dager Portfolio",
         "descripcion": "<strong>Landing page</strong> created in a <strong>three-day contest</strong> for a content creator. I was responsible for representing his <strong>humor</strong>, <strong>style</strong>, and <strong>personality</strong> through an <strong>interactive design</strong>, with <strong>fluid animations</strong> in key sections. It includes links to his <strong>social media</strong>, a <strong>video gallery</strong>, and a section about his <strong>favorite game</strong>. I used <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>."
     },
-    "proyecto_extra": {
-        "titulo": "Additional Project",
-        "descripcion": "Description of the additional project translated into English goes here."
+
+    "adivina_numero": {
+        "titulo": "Guess the Number",
+        "descripcion": "<strong>Logical game</strong> developed in <strong>React</strong> and <strong>CSS</strong>, where the goal is to guess a secret number in <strong>10 attempts</strong>. The game uses an interactive keyboard to input combinations and provides hints about numbers in the <strong>correct position</strong>, <strong>incorrect position</strong>, or part of the number. With <strong>difficulty levels</strong> allowing play with or without repeated numbers, this project helped me learn about <strong>animations</strong>, <strong>data management between components</strong>, and <strong>conditional logic</strong> in <strong>React</strong>."
     },
     
-
     "conocimientos": {
         "titulo": "Skills",
         "herramientas": "Tools"
-
     },
+    
     "sobremi": {
         "titulo": "About me",
         "descripcion": "I am a frontend developer driven by seeing how a website comes to life, from its efficient structure to an impactful aesthetic. Each project is an opportunity to learn something new and improve my skills. Additionally, I always prioritize accessibility and a pleasant user experience because I know that good design is key to the success of any product.",

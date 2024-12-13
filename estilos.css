@@ -600,11 +600,9 @@ li a {
 
 .video_footer a{
     color: var(--txt-color);
-    border: 1px solid #f8f9ff1f;
     padding: 4px;
     border-radius: 6px;
     display: flex;
-    gap: 6px;
     justify-self: center;
     align-self: center;
     background-color:transparent;
@@ -612,7 +610,7 @@ li a {
 }
 
 .video_footer a:hover{
-    background-color: var(--color-border);
+    background-color: #ddc6f8;
 }
 
 .video_footer article{
@@ -630,8 +628,8 @@ li a {
 .video_footer aside{
     display: flex;
     flex-direction: row;
-    background-color: #f1f1f1;
     border-radius: 6px;
+    gap: 6px;
 }
 
 

@@ -34,15 +34,16 @@
         "titulo": "Gestor Consorcio",
         "descripcion": "Proyecto grupal universitario con enfoque en <strong>gestión de consorcios</strong>. Diseñé y desarrollé el <strong>frontend</strong> usando <strong>React</strong>, con un diseño UX optimizado y <strong>animaciones interactivas</strong>. Implementé el <strong>backend</strong> con <strong>Java</strong> y <strong>SQL Server</strong>, resolviendo el desafío de <strong>eliminación en cascada</strong> en la base de datos. La aplicación incluye un sistema de <strong>roles</strong> (inquilinos, dueños, empleados) con acceso específico mediante <strong>ruteo dinámico</strong> y presentación de datos tipo <strong>tabla</strong> usando <strong>React</strong> y <strong>CSS</strong>."
     },
+
     "portafolio_dot_dager": {
         "titulo": "Portafolio Dot Dager",
         "descripcion": "<strong>Landing page</strong> creada en un <strong>concurso de tres días</strong> para un creador de contenido. Fui responsable de representar su <strong>humor</strong>, <strong>estilo</strong> y <strong>personalidad</strong> a través de un diseño <strong>interactivo</strong>, con <strong>animaciones fluidas</strong> en secciones clave. Incluye enlaces a sus <strong>redes sociales</strong>, una <strong>galería de videos</strong> y una sección de su <strong>juego favorito</strong>. Utilicé <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>."
     },
-    "proyecto_extra": {
-        "titulo": "Proyecto Adicional",
-        "descripcion": "La descripción del proyecto adicional traducida al español va aquí."
-    }
-    ,
+
+    "adivina_numero": {
+        "titulo": "Adivina el número",
+        "descripcion": "<strong>Juego lógico</strong> realizado en <strong>React</strong> y <strong>CSS</strong>, donde el objetivo es adivinar un número secreto en <strong>10 intentos</strong>. El juego utiliza un teclado interactivo para ingresar combinaciones y proporciona pistas sobre los números en la <strong>posición correcta</strong>, <strong>incorrecta</strong> o que forman parte del número. Con <strong>niveles de dificultad</strong> jugando con o sin números repetidos, este proyecto me permitió aprender sobre <strong>animaciones</strong>, manejo de <strong>datos entre componentes</strong> y <strong>lógica condicional</strong> en <strong>React</strong>."
+    },
     
     "conocimientos": {
         "titulo": "Conocimientos",
