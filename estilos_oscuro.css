@@ -79,6 +79,15 @@
     animation-range: 0 100px;
 }
 
+.dark-mode .video_card{
+    background-color: #232323;
+    border: 2px solid #aa74ec;
+}
+
+.dark-mode .video_card footer{
+    background-color: transparent;
+}
+
 @keyframes enganchar_nav_dark {
     to {
         background-color: #232323;

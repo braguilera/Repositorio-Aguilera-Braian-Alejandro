@@ -1395,6 +1395,14 @@ footer{
     .contacto__botones{
         font-size: 1.3rem;
     }
+
+    .fa_solid:first-child{
+        left: 30%;
+    }
+
+    .fa_solid:last-child{
+        right: 30%;
+    }
 }
 
 
@@ -1548,6 +1556,8 @@ footer{
     .switch-container{
         height: 60px;
     }
+
+    
 
 }
 
