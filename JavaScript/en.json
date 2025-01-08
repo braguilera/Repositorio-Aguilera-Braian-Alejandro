@@ -16,12 +16,15 @@
 
     "experiencia": {
         "titulo": "Experiencie",
-        "exp_titulo_lucas": "Art Portfolio",
-        "exp_fecha_lucas": "March 2024 - August 2024",
-        "exp_desc_lucas": "Development of a portfolio from scratch for Lucas Aguilera, an artist specializing in hand-painted canvases and murals. The portfolio aims to attract clients by showcasing his works in an accessible manner, featuring a modern and responsive interface. Each piece includes high-quality images, brief descriptions, and links to his social media, serving as a showcase of his talent and a tool for connections in the art world.",
+        "exp_titulo_enzo": "Portfolio Backend",
+        "exp_fecha_enzo": "December 2024 - January 2025",
+        "exp_desc_enzo": "Development of a minimalist and responsive portfolio for a university backend developer, designed to attract recruiters. It features a downloadable CV, sections for projects, experience, and skills with interactive modals. Built with React and Tailwind CSS, it includes multilingual support through i18next.",
         "exp_titulo_ofcourse": "Of Course: Fitness Classes",
         "exp_fecha_ofcourse": "August 2024 - September 2024",
         "exp_desc_ofcourse": "This project involved the design and development of a landing page to promote fitness classes aimed at attracting new clients. From conceptualization to final layout, a modern visual aesthetic focused on motivation and wellness was created. The page is fully responsive, ensuring an optimal experience on mobile devices, and includes key sections such as benefits, schedules, and contact information, facilitating user decision-making.",
+        "exp_titulo_lucas": "Art Portfolio",
+        "exp_fecha_lucas": "March 2024 - August 2024",
+        "exp_desc_lucas": "Development of a portfolio from scratch for Lucas Aguilera, an artist specializing in hand-painted canvases and murals. The portfolio aims to attract clients by showcasing his works in an accessible manner, featuring a modern and responsive interface. Each piece includes high-quality images, brief descriptions, and links to his social media, serving as a showcase of his talent and a tool for connections in the art world.",
         "ver_repo": "View repository",
         "ver_sitio": "Website"
     },

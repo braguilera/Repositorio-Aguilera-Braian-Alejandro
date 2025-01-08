@@ -391,6 +391,10 @@ li a {
     background-image: url("./img/projectos/Lucas_Aguilera/Portada_proyecto_Lucas.png");
 }
 
+.proyecto__enzo{
+    background-image: url("./img/projectos/Enzo_Marco/Portfolio_Enzo_Desktop.png");
+}
+
 .proyectos__of_course{
     background-image: url("./img/projectos/Of_Course/Portada_Of_Course.png");
 }
@@ -429,6 +433,15 @@ li a {
 .card__skills p{
     margin: 0;
     font-weight: bold;
+}
+
+.proyectos_freelance{
+    position: absolute;
+    padding: 4px 8px;
+    background-color: #9050dd;
+    right: 20px;
+    border-radius: 6px;
+    color: #f5f4f4;
 }
 
 .botones__skills{
@@ -1357,6 +1370,10 @@ footer{
 @media (max-width: 650px) {
     .proyecto__lucas{
         background-image: url("./img/projectos/Lucas_Aguilera/Portada_proyecto_Lucas__mobile.png");
+    }
+
+    .proyecto__enzo{
+        background-image: url("./img/projectos/Enzo_Marco/Portfolio_Enzo_Mobile.png");
     }
 
     .proyectos__of_course{
