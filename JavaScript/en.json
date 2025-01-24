@@ -33,6 +33,11 @@
         "titulo":"Projects"
     },
 
+    "PokeGuess": {
+        "titulo": "PokeGuess",
+        "descripcion": "Interactive game to practice using <strong>public APIs</strong>, developed with <strong>React</strong> and <strong>Tailwind</strong>. Users must guess a Pokémon by only seeing its <strong>black silhouette</strong>, with options like a <strong>help mode</strong> and a <strong>score</strong> and <strong>streak system</strong>. Upon guessing correctly, it displays <strong>statistics</strong> and <strong>visual animations</strong> for an enhanced experience. Inspired by the <strong>Pokédex</strong>, it features an immersive design and is fully <strong>responsive</strong>."
+    },
+
     "gestor_consorcio": {
         "titulo": "Consortium Manager",
         "descripcion": "University group project focused on <strong>consortium management</strong>. I designed and developed the <strong>frontend</strong> using <strong>React</strong>, with an optimized UX design and <strong>interactive animations</strong>. I implemented the <strong>backend</strong> with <strong>Java</strong> and <strong>SQL Server</strong>, solving the challenge of <strong>cascading deletion</strong> in the database. The application includes a <strong>roles system</strong> (tenants, owners, employees) with specific access through <strong>dynamic routing</strong> and table-style data presentation using <strong>React</strong> and <strong>CSS</strong>."
