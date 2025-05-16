@@ -16,9 +16,6 @@
 
     "experiencia": {
         "titulo": "Experiencia",
-        "exp_titulo_enzo": "Portafolio Backend",
-        "exp_fecha_enzo": "Diciembre 2024 - Enero 2025",
-        "exp_desc_enzo": "Desarrollo de un portafolio minimalista y responsivo para un desarrollador backend universitario, diseñado para atraer reclutadores. Incluye un CV descargable, secciones de proyectos, experiencia y habilidades con modales interactivos. Implementado en React y Tailwind CSS, con soporte multilenguaje gracias a i18next.",
         "exp_titulo_ofcourse": "Of Course: Clases fitness",
         "exp_fecha_ofcourse": "Agosto 2024 - Septiembre 2024",
         "exp_desc_ofcourse": "Este proyecto implicó el diseño y desarrollo de una landing page para promocionar clases de fitness, con el objetivo de atraer nuevos clientes. Desde la conceptualización hasta la maquetación final, se creó una estética visual moderna centrada en la motivación y el bienestar. La página es completamente responsive, asegurando una experiencia óptima en dispositivos móviles, e incluye secciones clave como beneficios, horarios y contacto, facilitando la toma de decisiones de los usuarios.",
